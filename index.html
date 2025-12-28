@@ -1,166 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Mallem Dheeraj Royal | AI & Tech Freelancer</title>
-
-  <meta name="description" content="Professional portfolio of Mallem Dheeraj Royal — AI & ML student offering resume optimization, tech automation, and content services.">
+  <meta charset="UTF-8">
+  <title>Mallem Dheeraj Royal | Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="stylesheet" href="style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
-<!-- ================= HEADER ================= -->
-<header class="site-header">
-  <div class="container">
-    <h1>Mallem Dheeraj Royal</h1>
-    <p class="tagline">AI & ML Student | Tech & Content Freelancer</p>
+<!-- ===== HEADER ===== -->
+<header class="header">
+  <div class="profile-wrapper">
+    <img src="profile.jpg" alt="Mallem Dheeraj Royal" class="profile-pic">
+  </div>
 
-    <div class="cta">
-      <a href="#contact" class="btn-primary">Get a Free Audit</a>
-    </div>
+  <h1>Mallem Dheeraj Royal</h1>
+  <p class="subtitle">AI & ML Student | Tech & Content Freelancer</p>
+
+  <div class="nav-buttons">
+    <button class="active" onclick="showSection('profile', this)">Profile</button>
+    <button onclick="showSection('services', this)">Services</button>
   </div>
 </header>
 
-<!-- ================= SECTION 1 ================= -->
-<section class="container section">
-  <h2>Profile</h2>
-  <p class="intro">
-    Final-year Artificial Intelligence & Machine Learning student with hands-on
-    experience in AI projects, automation tools, and professional content creation.
-    I focus on practical, real-world solutions that deliver results.
-  </p>
+<!-- ===== PROFILE SECTION ===== -->
+<section id="profile" class="section active">
+  <h2>Education</h2>
+  <div class="card">
+    <strong>B.Tech – Artificial Intelligence & Machine Learning</strong>
+    <p>SJC Institute of Technology (VTU)</p>
+    <span class="muted">2022 – 2026</span>
+  </div>
 
-  <!-- EDUCATION -->
-  <div class="block">
-    <h3>Education</h3>
+  <h2>Projects</h2>
+  <div class="grid">
     <div class="card">
-      <strong>B.Tech – Artificial Intelligence & Machine Learning</strong>
-      <p>SJC Institute of Technology (VTU)</p>
-      <span class="muted">2022 – 2026</span>
+      <h3>SolarGuard AI</h3>
+      <p>AI-based rooftop solar verification using Computer Vision & GenAI.</p>
+    </div>
+    <div class="card">
+      <h3>Smart Nagar AI</h3>
+      <p>AI-powered smart governance and public issue tracking platform.</p>
+    </div>
+    <div class="card">
+      <h3>AI Reverse Shopping</h3>
+      <p>AI-driven reverse marketplace recommendation system.</p>
     </div>
   </div>
 
-  <!-- PROJECTS -->
-  <div class="block">
-    <h3>Projects</h3>
-    <div class="grid">
-      <div class="card">
-        <h4>SolarGuard AI</h4>
-        <p>
-          AI-based rooftop solar verification system using Computer Vision
-          and GenAI for automated inspection and reporting.
-        </p>
-      </div>
-
-      <div class="card">
-        <h4>Smart Nagar AI</h4>
-        <p>
-          AI-powered smart governance platform for public issue reporting,
-          tracking, and analytics.
-        </p>
-      </div>
-
-      <div class="card">
-        <h4>AI Reverse Shopping</h4>
-        <p>
-          Conceptual AI marketplace where vendors respond to user demand,
-          optimized using recommendation logic.
-        </p>
-      </div>
-    </div>
-  </div>
-
-  <!-- SKILLS -->
-  <div class="block">
-    <h3>Skills</h3>
-    <div class="skills">
-      <span>Python</span>
-      <span>SQL</span>
-      <span>Machine Learning</span>
-      <span>Data Analysis</span>
-      <span>AI Automation</span>
-      <span>Excel / Google Sheets</span>
-      <span>ATS Resume Writing</span>
-      <span>LinkedIn Content</span>
-    </div>
+  <h2>Skills</h2>
+  <div class="skills">
+    <span>Python</span>
+    <span>SQL</span>
+    <span>Machine Learning</span>
+    <span>Data Analysis</span>
+    <span>AI Automation</span>
+    <span>Excel / Google Sheets</span>
+    <span>ATS Resume Writing</span>
+    <span>LinkedIn Content</span>
   </div>
 </section>
 
-<!-- ================= SECTION 2 ================= -->
-<section class="section highlight">
-  <div class="container">
-    <h2>Services</h2>
-    <p class="intro">
-      I offer focused, affordable services designed for students,
-      professionals, and small teams.
-    </p>
+<!-- ===== SERVICES SECTION ===== -->
+<section id="services" class="section">
+  <h2>Services I Offer</h2>
 
-    <div class="grid">
-      <div class="card">
-        <h4>ATS Resume & LinkedIn Optimization</h4>
-        <p>
-          Job-ready resumes optimized for ATS systems, plus LinkedIn
-          profile improvements.
-        </p>
-        <p class="muted">Delivery: 24–48 hours</p>
-      </div>
+  <div class="grid">
+    <div class="card">
+      <h3>ATS Resume & LinkedIn Optimization</h3>
+      <p>Job-ready resumes optimized for ATS with fast delivery.</p>
+    </div>
 
-      <div class="card">
-        <h4>Tech Automation</h4>
-        <p>
-          Excel / Google Sheets automation, dashboards, reports,
-          and workflow optimization.
-        </p>
-        <p class="muted">One-time or project-based</p>
-      </div>
+    <div class="card">
+      <h3>Tech Automation</h3>
+      <p>Excel / Google Sheets automation, dashboards, and reports.</p>
+    </div>
 
-      <div class="card">
-        <h4>Content Writing</h4>
-        <p>
-          LinkedIn posts, blogs, scripts, and professional content
-          using AI-assisted workflows.
-        </p>
-        <p class="muted">Monthly or per-task</p>
-      </div>
+    <div class="card">
+      <h3>Content Writing</h3>
+      <p>LinkedIn posts, blogs, and scripts using AI-assisted workflows.</p>
     </div>
   </div>
-</section>
 
-<!-- ================= CONTACT ================= -->
-<section id="contact" class="container section contact">
-  <h2>Contact</h2>
-
-  <p>
-    📧 Email:
-    <a href="mailto:mallemdheerajroyal@gmail.com">
-      mallemdheerajroyal@gmail.com
-    </a>
-  </p>
-
-  <p>
-    📱 WhatsApp:
-    <a href="https://wa.me/919059061099" target="_blank">
-      +91 90590 61099
-    </a>
-  </p>
-
-  <p>
-    💻 GitHub:
-    <a href="https://github.com/Mallem8704" target="_blank">
-      github.com/Mallem8704
-    </a>
-  </p>
-</section>
-
-<!-- ================= FOOTER ================= -->
-<footer class="site-footer">
-  <div class="container">
-    <p>© 2026 Mallem Dheeraj Royal • Built with GitHub Pages</p>
+  <div class="contact">
+    <p>📧 Email: <a href="mailto:mallemdheerajroyal@gmail.com">mallemdheerajroyal@gmail.com</a></p>
+    <p>📱 WhatsApp: <a href="https://wa.me/919059061099">+91 90590 61099</a></p>
+    <p>💻 GitHub: <a href="https://github.com/Mallem8704" target="_blank">Mallem8704</a></p>
   </div>
-</footer>
+</section>
+
+<!-- ===== SCRIPT ===== -->
+<script>
+  function showSection(id, btn) {
+    document.querySelectorAll('.section').forEach(sec => {
+      sec.classList.remove('active');
+    });
+    document.querySelectorAll('.nav-buttons button').forEach(b => {
+      b.classList.remove('active');
+    });
+    document.getElementById(id).classList.add('active');
+    btn.classList.add('active');
+  }
+</script>
 
 </body>
 </html>
