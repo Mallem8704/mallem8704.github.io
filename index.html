@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Mallem Dheeraj Royal | Portfolio</title>
+  <title>Mallem Dheeraj Royal | AI Freelancer</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="stylesheet" href="style.css">
@@ -10,98 +10,118 @@
 </head>
 <body>
 
-<!-- ===== HEADER ===== -->
-<header class="header">
-  <div class="profile-wrapper">
-    <img src="profile.jpg" alt="Mallem Dheeraj Royal" class="profile-pic">
+<!-- ===== HERO / FIRST PAGE ===== -->
+<section class="hero">
+  <div class="hero-content">
+    <img src="profile.jpg" class="avatar" alt="Mallem Dheeraj Royal">
+
+    <h1>Mallem Dheeraj Royal</h1>
+    <p class="role">AI & ML Student • Tech & Content Freelancer</p>
+
+    <p class="intro">
+      I build practical AI solutions, automate workflows, and help students
+      & professionals grow with tech-powered services.
+    </p>
+
+    <div class="tab-buttons">
+      <button class="active" onclick="openTab('portfolio', this)">Portfolio</button>
+      <button onclick="openTab('services', this)">Service Offers</button>
+    </div>
   </div>
+</section>
 
-  <h1>Mallem Dheeraj Royal</h1>
-  <p class="subtitle">AI & ML Student | Tech & Content Freelancer</p>
+<!-- ===== PORTFOLIO SECTION ===== -->
+<section id="portfolio" class="tab-section active">
+  <h2>Portfolio</h2>
 
-  <div class="nav-buttons">
-    <button class="active" onclick="showSection('profile', this)">Profile</button>
-    <button onclick="showSection('services', this)">Services</button>
-  </div>
-</header>
+  <div class="portfolio-grid">
+    <div class="card">
+      <h3>Education</h3>
+      <p><strong>B.Tech – AI & ML</strong></p>
+      <p>SJC Institute of Technology (VTU)</p>
+      <span>2022 – 2026</span>
+    </div>
 
-<!-- ===== PROFILE SECTION ===== -->
-<section id="profile" class="section active">
-  <h2>Education</h2>
-  <div class="card">
-    <strong>B.Tech – Artificial Intelligence & Machine Learning</strong>
-    <p>SJC Institute of Technology (VTU)</p>
-    <span class="muted">2022 – 2026</span>
-  </div>
-
-  <h2>Projects</h2>
-  <div class="grid">
     <div class="card">
       <h3>SolarGuard AI</h3>
-      <p>AI-based rooftop solar verification using Computer Vision & GenAI.</p>
+      <p>Computer Vision & GenAI based solar rooftop verification system.</p>
     </div>
+
     <div class="card">
       <h3>Smart Nagar AI</h3>
-      <p>AI-powered smart governance and public issue tracking platform.</p>
+      <p>AI platform for smart governance & public issue tracking.</p>
     </div>
+
     <div class="card">
       <h3>AI Reverse Shopping</h3>
-      <p>AI-driven reverse marketplace recommendation system.</p>
+      <p>AI-powered reverse marketplace recommendation concept.</p>
     </div>
   </div>
 
-  <h2>Skills</h2>
+  <h3 class="sub">Skills</h3>
   <div class="skills">
     <span>Python</span>
     <span>SQL</span>
     <span>Machine Learning</span>
-    <span>Data Analysis</span>
     <span>AI Automation</span>
-    <span>Excel / Google Sheets</span>
-    <span>ATS Resume Writing</span>
-    <span>LinkedIn Content</span>
+    <span>Data Analysis</span>
+    <span>Excel / Sheets</span>
+    <span>Content Writing</span>
   </div>
 </section>
 
 <!-- ===== SERVICES SECTION ===== -->
-<section id="services" class="section">
-  <h2>Services I Offer</h2>
+<section id="services" class="tab-section">
+  <h2>Service Offers</h2>
 
-  <div class="grid">
-    <div class="card">
+  <div class="service-grid">
+    <div class="service-card">
       <h3>ATS Resume & LinkedIn Optimization</h3>
-      <p>Job-ready resumes optimized for ATS with fast delivery.</p>
+      <p>
+        ✔ ATS-friendly resume rewriting  
+        ✔ LinkedIn profile optimization  
+        ✔ Real job-oriented keywords
+      </p>
+      <span class="example">Live example: Resume before/after analysis</span>
     </div>
 
-    <div class="card">
+    <div class="service-card">
       <h3>Tech Automation</h3>
-      <p>Excel / Google Sheets automation, dashboards, and reports.</p>
+      <p>
+        ✔ Excel & Google Sheets automation  
+        ✔ Dashboards & reports  
+        ✔ Workflow optimization
+      </p>
+      <span class="example">Live example: Automated report system</span>
     </div>
 
-    <div class="card">
+    <div class="service-card">
       <h3>Content Writing</h3>
-      <p>LinkedIn posts, blogs, and scripts using AI-assisted workflows.</p>
+      <p>
+        ✔ LinkedIn posts  
+        ✔ Blogs & scripts  
+        ✔ AI-assisted professional writing
+      </p>
+      <span class="example">Live example: LinkedIn growth content</span>
     </div>
   </div>
 
   <div class="contact">
-    <p>📧 Email: <a href="mailto:mallemdheerajroyal@gmail.com">mallemdheerajroyal@gmail.com</a></p>
-    <p>📱 WhatsApp: <a href="https://wa.me/919059061099">+91 90590 61099</a></p>
-    <p>💻 GitHub: <a href="https://github.com/Mallem8704" target="_blank">Mallem8704</a></p>
+    <p>📧 <a href="mailto:mallemdheerajroyal@gmail.com">mallemdheerajroyal@gmail.com</a></p>
+    <p>📱 <a href="https://wa.me/919059061099">+91 90590 61099</a></p>
   </div>
 </section>
 
 <!-- ===== SCRIPT ===== -->
 <script>
-  function showSection(id, btn) {
-    document.querySelectorAll('.section').forEach(sec => {
-      sec.classList.remove('active');
-    });
-    document.querySelectorAll('.nav-buttons button').forEach(b => {
-      b.classList.remove('active');
-    });
-    document.getElementById(id).classList.add('active');
+  function openTab(tabId, btn) {
+    document.querySelectorAll('.tab-section').forEach(sec => sec.classList.remove('active'));
+    document.querySelectorAll('.tab-buttons button').forEach(b => b.classList.remove('active'));
+
+    document.getElementById(tabId).classList.add('active');
     btn.classList.add('active');
+
+    document.getElementById(tabId).scrollIntoView({ behavior: 'smooth' });
   }
 </script>
 
