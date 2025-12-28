@@ -1,1 +1,176 @@
+/* ================= GLOBAL ================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
+body {
+  font-family: 'Inter', sans-serif;
+  background: #f8f9fb;
+  color: #1f2937;
+  line-height: 1.6;
+}
+
+/* ================= LAYOUT ================= */
+.container {
+  max-width: 1100px;
+  margin: auto;
+  padding: 0 20px;
+}
+
+.section {
+  padding: 70px 0;
+}
+
+.highlight {
+  background: #eef6ff;
+}
+
+/* ================= HEADER ================= */
+.site-header {
+  background: linear-gradient(135deg, #0f172a, #1e293b);
+  color: #ffffff;
+  padding: 90px 0;
+  text-align: center;
+}
+
+.site-header h1 {
+  font-size: 42px;
+  font-weight: 700;
+}
+
+.tagline {
+  font-size: 18px;
+  margin-top: 12px;
+  color: #cbd5e1;
+}
+
+.cta {
+  margin-top: 30px;
+}
+
+.btn-primary {
+  background: #38bdf8;
+  color: #020617;
+  padding: 14px 30px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.3s ease;
+}
+
+.btn-primary:hover {
+  background: #0ea5e9;
+  color: #ffffff;
+}
+
+/* ================= HEADINGS ================= */
+h2 {
+  font-size: 30px;
+  margin-bottom: 20px;
+  color: #0f172a;
+}
+
+h3 {
+  font-size: 22px;
+  margin-bottom: 15px;
+}
+
+h4 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+/* ================= TEXT ================= */
+.intro {
+  font-size: 17px;
+  max-width: 800px;
+  margin-bottom: 40px;
+  color: #374151;
+}
+
+.muted {
+  font-size: 14px;
+  color: #6b7280;
+}
+
+/* ================= BLOCKS ================= */
+.block {
+  margin-bottom: 50px;
+}
+
+/* ================= CARDS ================= */
+.card {
+  background: #ffffff;
+  padding: 25px;
+  border-radius: 14px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.06);
+}
+
+/* ================= GRID ================= */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 25px;
+}
+
+/* ================= SKILLS ================= */
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.skills span {
+  background: #e0f2fe;
+  color: #0369a1;
+  padding: 10px 16px;
+  border-radius: 999px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+/* ================= CONTACT ================= */
+.contact p {
+  margin-bottom: 12px;
+  font-size: 16px;
+}
+
+.contact a {
+  color: #0284c7;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.contact a:hover {
+  text-decoration: underline;
+}
+
+/* ================= FOOTER ================= */
+.site-footer {
+  background: #0f172a;
+  color: #cbd5e1;
+  padding: 25px 0;
+  text-align: center;
+  font-size: 14px;
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 768px) {
+  .site-header h1 {
+    font-size: 32px;
+  }
+
+  .tagline {
+    font-size: 16px;
+  }
+
+  h2 {
+    font-size: 26px;
+  }
+
+  .section {
+    padding: 55px 0;
+  }
+}
