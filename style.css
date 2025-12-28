@@ -1,176 +1,142 @@
-/* ================= GLOBAL ================= */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
 }
 
 body {
-  font-family: 'Inter', sans-serif;
-  background: #f8f9fb;
-  color: #1f2937;
-  line-height: 1.6;
+  background: linear-gradient(180deg, #0f172a, #020617);
+  color: #e5e7eb;
 }
 
-/* ================= LAYOUT ================= */
-.container {
-  max-width: 1100px;
-  margin: auto;
-  padding: 0 20px;
-}
-
-.section {
-  padding: 70px 0;
-}
-
-.highlight {
-  background: #eef6ff;
-}
-
-/* ================= HEADER ================= */
-.site-header {
-  background: linear-gradient(135deg, #0f172a, #1e293b);
-  color: #ffffff;
-  padding: 90px 0;
+/* HEADER */
+.header {
   text-align: center;
+  padding: 60px 20px;
 }
 
-.site-header h1 {
-  font-size: 42px;
-  font-weight: 700;
+.profile-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
 }
 
-.tagline {
-  font-size: 18px;
-  margin-top: 12px;
-  color: #cbd5e1;
+.profile-pic {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #38bdf8;
+  box-shadow: 0 10px 30px rgba(56, 189, 248, 0.4);
+  animation: float 3s ease-in-out infinite;
 }
 
-.cta {
+@keyframes float {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-6px); }
+  100% { transform: translateY(0); }
+}
+
+.header h1 {
+  font-size: 40px;
+}
+
+.subtitle {
+  margin-top: 10px;
+  color: #94a3b8;
+}
+
+/* NAV */
+.nav-buttons {
   margin-top: 30px;
 }
 
-.btn-primary {
+.nav-buttons button {
+  background: transparent;
+  border: 2px solid #38bdf8;
+  color: #38bdf8;
+  padding: 10px 24px;
+  margin: 0 8px;
+  border-radius: 30px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.nav-buttons button.active,
+.nav-buttons button:hover {
   background: #38bdf8;
   color: #020617;
-  padding: 14px 30px;
-  border-radius: 8px;
-  text-decoration: none;
-  font-weight: 600;
-  transition: 0.3s ease;
 }
 
-.btn-primary:hover {
-  background: #0ea5e9;
-  color: #ffffff;
+/* SECTIONS */
+.section {
+  max-width: 1000px;
+  margin: auto;
+  padding: 50px 20px;
+  display: none;
+  animation: fadeIn 0.6s ease;
 }
 
-/* ================= HEADINGS ================= */
+.section.active {
+  display: block;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(15px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* HEADINGS */
 h2 {
-  font-size: 30px;
+  color: #38bdf8;
   margin-bottom: 20px;
-  color: #0f172a;
+  margin-top: 40px;
 }
 
-h3 {
-  font-size: 22px;
-  margin-bottom: 15px;
-}
-
-h4 {
-  font-size: 18px;
-  margin-bottom: 10px;
-}
-
-/* ================= TEXT ================= */
-.intro {
-  font-size: 17px;
-  max-width: 800px;
-  margin-bottom: 40px;
-  color: #374151;
-}
-
-.muted {
-  font-size: 14px;
-  color: #6b7280;
-}
-
-/* ================= BLOCKS ================= */
-.block {
-  margin-bottom: 50px;
-}
-
-/* ================= CARDS ================= */
+/* CARDS */
 .card {
-  background: #ffffff;
-  padding: 25px;
+  background: #020617;
+  padding: 20px;
   border-radius: 14px;
-  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.06);
+  margin-bottom: 20px;
 }
 
-/* ================= GRID ================= */
+/* GRID */
 .grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 25px;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
 }
 
-/* ================= SKILLS ================= */
-.skills {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 12px;
-}
-
+/* SKILLS */
 .skills span {
-  background: #e0f2fe;
-  color: #0369a1;
-  padding: 10px 16px;
-  border-radius: 999px;
+  display: inline-block;
+  background: #1e293b;
+  padding: 8px 14px;
+  border-radius: 20px;
+  margin: 6px;
   font-size: 14px;
-  font-weight: 500;
 }
 
-/* ================= CONTACT ================= */
-.contact p {
-  margin-bottom: 12px;
-  font-size: 16px;
+/* CONTACT */
+.contact {
+  margin-top: 30px;
 }
 
 .contact a {
-  color: #0284c7;
+  color: #38bdf8;
   text-decoration: none;
-  font-weight: 500;
 }
 
-.contact a:hover {
-  text-decoration: underline;
-}
-
-/* ================= FOOTER ================= */
-.site-footer {
-  background: #0f172a;
-  color: #cbd5e1;
-  padding: 25px 0;
-  text-align: center;
-  font-size: 14px;
-}
-
-/* ================= RESPONSIVE ================= */
+/* RESPONSIVE */
 @media (max-width: 768px) {
-  .site-header h1 {
+  .header h1 {
     font-size: 32px;
   }
-
-  .tagline {
-    font-size: 16px;
-  }
-
-  h2 {
-    font-size: 26px;
-  }
-
-  .section {
-    padding: 55px 0;
+  .profile-pic {
+    width: 120px;
+    height: 120px;
   }
 }
