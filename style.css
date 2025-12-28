@@ -6,123 +6,158 @@
 }
 
 body {
-  background: linear-gradient(180deg, #0f172a, #020617);
+  background: radial-gradient(circle at top, #1e1b4b, #020617);
   color: #e5e7eb;
 }
 
-/* HEADER */
-.header {
+/* HERO */
+.hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   text-align: center;
-  padding: 60px 20px;
+  padding: 40px 20px;
 }
 
-.profile-wrapper {
-  display: flex;
-  justify-content: center;
+.hero-content {
+  max-width: 700px;
+}
+
+.avatar {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  border: 3px solid #38bdf8;
   margin-bottom: 20px;
 }
 
-.profile-pic {
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
-  object-fit: cover;
-  border: 4px solid #38bdf8;
-  box-shadow: 0 10px 30px rgba(56, 189, 248, 0.4);
-  animation: float 3s ease-in-out infinite;
+.hero h1 {
+  font-size: 38px;
 }
 
-@keyframes float {
-  0% { transform: translateY(0); }
-  50% { transform: translateY(-6px); }
-  100% { transform: translateY(0); }
+.role {
+  color: #a5b4fc;
+  margin-top: 8px;
 }
 
-.header h1 {
-  font-size: 40px;
+.intro {
+  margin-top: 16px;
+  color: #cbd5f5;
+  line-height: 1.6;
 }
 
-.subtitle {
-  margin-top: 10px;
-  color: #94a3b8;
-}
-
-/* NAV */
-.nav-buttons {
+/* TABS */
+.tab-buttons {
   margin-top: 30px;
 }
 
-.nav-buttons button {
+.tab-buttons button {
   background: transparent;
-  border: 2px solid #38bdf8;
-  color: #38bdf8;
-  padding: 10px 24px;
-  margin: 0 8px;
+  border: 2px solid #6366f1;
+  color: #e5e7eb;
+  padding: 12px 26px;
+  margin: 0 10px;
   border-radius: 30px;
   cursor: pointer;
   font-weight: 600;
   transition: 0.3s;
 }
 
-.nav-buttons button.active,
-.nav-buttons button:hover {
-  background: #38bdf8;
+.tab-buttons button.active,
+.tab-buttons button:hover {
+  background: linear-gradient(90deg, #6366f1, #38bdf8);
   color: #020617;
 }
 
 /* SECTIONS */
-.section {
-  max-width: 1000px;
+.tab-section {
+  max-width: 1100px;
   margin: auto;
-  padding: 50px 20px;
+  padding: 80px 20px;
   display: none;
-  animation: fadeIn 0.6s ease;
+  animation: fadeUp 0.6s ease;
 }
 
-.section.active {
+.tab-section.active {
   display: block;
 }
 
-@keyframes fadeIn {
-  from { opacity: 0; transform: translateY(15px); }
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(25px); }
   to { opacity: 1; transform: translateY(0); }
 }
 
-/* HEADINGS */
 h2 {
+  text-align: center;
+  font-size: 32px;
+  margin-bottom: 40px;
   color: #38bdf8;
-  margin-bottom: 20px;
-  margin-top: 40px;
 }
 
-/* CARDS */
-.card {
-  background: #020617;
-  padding: 20px;
-  border-radius: 14px;
-  margin-bottom: 20px;
-}
-
-/* GRID */
-.grid {
+/* PORTFOLIO */
+.portfolio-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   gap: 20px;
 }
 
+.card {
+  background: linear-gradient(145deg, #020617, #1e1b4b);
+  padding: 22px;
+  border-radius: 16px;
+  border: 1px solid rgba(99,102,241,0.3);
+}
+
 /* SKILLS */
+.sub {
+  margin: 50px 0 20px;
+  text-align: center;
+}
+
+.skills {
+  text-align: center;
+}
+
 .skills span {
   display: inline-block;
-  background: #1e293b;
-  padding: 8px 14px;
-  border-radius: 20px;
+  background: #1e1b4b;
+  padding: 8px 16px;
   margin: 6px;
+  border-radius: 20px;
   font-size: 14px;
+}
+
+/* SERVICES */
+.service-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
+}
+
+.service-card {
+  background: linear-gradient(160deg, #020617, #312e81);
+  padding: 25px;
+  border-radius: 18px;
+  border: 1px solid rgba(56,189,248,0.4);
+  transition: transform 0.3s;
+}
+
+.service-card:hover {
+  transform: translateY(-6px);
+}
+
+.example {
+  display: block;
+  margin-top: 14px;
+  font-size: 13px;
+  color: #93c5fd;
 }
 
 /* CONTACT */
 .contact {
-  margin-top: 30px;
+  text-align: center;
+  margin-top: 50px;
 }
 
 .contact a {
@@ -132,11 +167,7 @@ h2 {
 
 /* RESPONSIVE */
 @media (max-width: 768px) {
-  .header h1 {
-    font-size: 32px;
-  }
-  .profile-pic {
-    width: 120px;
-    height: 120px;
+  .hero h1 {
+    font-size: 30px;
   }
 }
