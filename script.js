@@ -1,31 +1,30 @@
-function scrollToSection(sectionId) {
-  const section = document.getElementById(sectionId);
-  if (section) {
-    section.scrollIntoView({ behavior: 'smooth', block: 'start' });
-  }
-}
+/* ===== PROJECT FILTER ===== */
+const filterButtons = document.querySelectorAll('.filter-btn');
+const projects = document.querySelectorAll('.project-card');
 
-document.addEventListener('DOMContentLoaded', function() {
-  const observerOptions = {
-    threshold: 0.1,
-    rootMargin: '0px 0px -100px 0px'
-  };
+filterButtons.forEach(btn => {
+  btn.addEventListener('click', () => {
+    filterButtons.forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
 
-  const observer = new IntersectionObserver(function(entries) {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        entry.target.style.animation = 'fadeInUp 0.8s ease forwards';
-      }
+    const filter = btn.dataset.filter;
+
+    projects.forEach(project => {
+      project.style.display =
+        filter === 'all' || project.dataset.category === filter
+          ? 'block'
+          : 'none';
     });
-  }, observerOptions);
-
-  const sections = document.querySelectorAll('.portfolio-section, .services-section, .cta-section');
-  sections.forEach(section => {
-    observer.observe(section);
-  });
-
-  const cards = document.querySelectorAll('.project-card, .service-card');
-  cards.forEach((card, index) => {
-    card.style.animationDelay = `${index * 0.1}s`;
   });
 });
+
+/* ===== SCROLL ANIMATION ===== */
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('show');
+    }
+  });
+}, { threshold: 0.2 });
+
+document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
