@@ -131,3 +131,134 @@ body {
   padding: 20px;
   color: #888;
 }
+/* ===== GLOBAL ===== */
+body {
+  font-family: 'Inter', sans-serif;
+  background: #0a0f1c;
+  color: #fff;
+  margin: 0;
+}
+
+/* ===== CYBER BACKGROUND ===== */
+.cyber-bg {
+  position: fixed;
+  inset: 0;
+  background:
+    radial-gradient(circle at top, #00f7ff22, transparent 60%),
+    radial-gradient(circle at bottom, #7f00ff22, transparent 60%);
+  animation: bgMove 12s infinite alternate;
+  z-index: -1;
+}
+
+@keyframes bgMove {
+  from { filter: hue-rotate(0deg); }
+  to   { filter: hue-rotate(40deg); }
+}
+
+/* ===== TOP NAV ===== */
+.top-nav {
+  position: fixed;
+  top: 15px;
+  left: 15px;
+  z-index: 10;
+}
+
+.home-btn {
+  width: 45px;
+  height: 45px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.15);
+  backdrop-filter: blur(10px);
+  color: #00f7ff;
+  font-size: 18px;
+}
+
+/* ===== SECTION ===== */
+.section {
+  padding: 100px 20px 120px;
+}
+
+.container {
+  max-width: 1100px;
+  margin: auto;
+}
+
+.section-title {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+/* ===== BLOGS ===== */
+.blogs-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 25px;
+}
+
+.blog-card {
+  padding: 25px;
+  border-radius: 15px;
+  transition: 0.3s;
+}
+
+.blog-card:hover {
+  transform: translateY(-8px) scale(1.02);
+}
+
+.blog-tag {
+  display: inline-block;
+  margin-top: 12px;
+  color: #00f7ff;
+  font-size: 14px;
+}
+
+.blog-link {
+  color: #00f7ff;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 10px;
+}
+
+.highlight {
+  border: 1px solid #00f7ff;
+}
+
+/* ===== GLASS ===== */
+.glass {
+  background: rgba(255,255,255,0.08);
+  backdrop-filter: blur(12px);
+}
+
+/* ===== BOTTOM NAV ===== */
+.bottom-nav {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-around;
+  padding: 12px;
+  background: rgba(0,0,0,0.6);
+  backdrop-filter: blur(10px);
+}
+
+.bottom-nav a {
+  color: #aaa;
+  font-size: 20px;
+}
+
+.bottom-nav a.active,
+.bottom-nav a:hover {
+  color: #00f7ff;
+}
+
+/* ===== FOOTER ===== */
+.footer {
+  text-align: center;
+  padding: 20px;
+  font-size: 14px;
+  opacity: 0.7;
+}
+
