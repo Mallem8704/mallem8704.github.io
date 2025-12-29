@@ -79,49 +79,40 @@
   </div>
 </section>
 
-<!-- ================= CONTACT CTA (ADDED) ================= -->
-<!-- ===== CONTACT CTA ===== -->
-<section class="service-contact">
-  <h2 class="contact-title">
-    Let’s Work <span>Together</span>
-  </h2>
-  <p class="contact-subtitle">
-    Ready to build something impactful? Reach out anytime 👇
-  </p>
+<div class="floating-contact">
 
-  <div class="contact-box">
-    <!-- WhatsApp -->
-    <a href="https://wa.me/919059061099" target="_blank" class="contact-item">
-      <i class="fa-brands fa-whatsapp"></i>
-      <div>
-        <h4>WhatsApp</h4>
-        <p>+91 90590 61099</p>
-      </div>
-    </a>
+  <a href="https://wa.me/919059061099"
+     target="_blank"
+     class="float-btn whatsapp"
+     title="Chat on WhatsApp">
+    💬
+  </a>
 
-    <!-- Email -->
-    <a href="mailto:mallemdheerajroyal@gmail.com" class="contact-item">
-      <i class="fa-solid fa-envelope"></i>
-      <div>
-        <h4>Email</h4>
-        <p>mallemdheerajroyal@gmail.com</p>
-      </div>
-    </a>
+  <a href="mailto:mallemdheerajroyal@gmail.com"
+     class="float-btn email"
+     title="Send Email">
+    📧
+  </a>
 
-    <!-- LinkedIn -->
-    <a href="https://www.linkedin.com/in/mallemdheeraj-royal-820469251"
-       target="_blank"
-       class="contact-item">
-      <i class="fa-brands fa-linkedin"></i>
-      <div>
-        <h4>LinkedIn</h4>
-        <p>Professional Network</p>
-      </div>
-    </a>
-  </div>
-</section>
+  <a href="https://www.linkedin.com/in/mallemdheeraj-royal-820469251"
+     target="_blank"
+     class="float-btn linkedin"
+     title="LinkedIn Profile">
+    💼
+  </a>
 
+</div>
 
+<!-- ===== ANIMATION SCRIPT ===== -->
+<script>
+const items = document.querySelectorAll("[data-animate]");
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(e => {
+    if (e.isIntersecting) e.target.classList.add("show");
+  });
+}, { threshold: 0.15 });
+items.forEach(i => observer.observe(i));
+</script>
 <!-- ===== BOTTOM NAV ===== -->
 <nav class="bottom-nav">
   <a href="portfolio.html"><i class="fa-solid fa-user"></i></a>
