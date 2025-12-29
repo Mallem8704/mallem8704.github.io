@@ -4,53 +4,62 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Mallem Dheeraj Royal | AI & Tech Freelancer</title>
+
   <link rel="stylesheet" href="style.css"/>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
-
 <body>
 
-<!-- ========== HERO ========== -->
+<!-- ================= HERO ================= -->
 <section id="hero" class="hero-section">
   <div class="container">
     <div class="hero-header">
-      <img src="WhatsApp Image 2025-12-28 at 8.37.10 PM.jpeg" class="profile-photo">
+      <img src="WhatsApp Image 2025-12-28 at 8.37.10 PM.jpeg" alt="Profile" class="profile-photo">
       <div>
-        <h1>Mallem Dheeraj Royal</h1>
-        <p class="tagline">AI & Tech Solutions Specialist</p>
+        <h1 class="hero-name">Mallem Dheeraj Royal</h1>
+        <p class="hero-tagline">AI & Tech Solutions Specialist</p>
       </div>
     </div>
 
     <p class="hero-intro">
-      I help businesses & professionals grow using AI, automation and modern technology.
+      I help businesses and professionals grow using AI, automation,
+      and modern technology to save time and increase efficiency.
     </p>
 
     <div class="hero-cards">
-      <div class="hero-card glass" onclick="scrollToSection('portfolio')">🎓 Portfolio</div>
-      <div class="hero-card glass" onclick="scrollToSection('services')">🚀 Services</div>
-      <div class="hero-card glass" onclick="scrollToSection('blogs')">✍️ Blogs</div>
+      <div class="hero-card glass" onclick="scrollToSection('portfolio')">
+        🎓 Portfolio
+      </div>
+      <div class="hero-card glass" onclick="scrollToSection('services')">
+        🚀 Services
+      </div>
+      <div class="hero-card glass" onclick="scrollToSection('blogs')">
+        ✍️ Blogs
+      </div>
     </div>
   </div>
 </section>
 
-<!-- ========== PORTFOLIO ========== -->
+<!-- ================= PORTFOLIO ================= -->
 <section id="portfolio" class="section">
   <div class="container">
     <h2>Portfolio</h2>
 
-    <!-- EDUCATION (ONE CARD) -->
+    <!-- ===== EDUCATION (SINGLE CARD) ===== -->
     <div class="education-card glass">
       <h3>Education</h3>
 
-      <div class="edu-top">
-        <div>
+      <div class="education-grid">
+        <!-- 10th -->
+        <div class="education-box">
           <h4>10th Class</h4>
           <p>Valmeeki High School, Kadiri</p>
-          <p>SSC – AP Board</p>
+          <p>SSC – Andhra Pradesh</p>
           <p>2020</p>
         </div>
 
-        <div>
+        <!-- Intermediate -->
+        <div class="education-box">
           <h4>Intermediate</h4>
           <p>Blue Moon International College</p>
           <p>BIEAP</p>
@@ -58,95 +67,79 @@
         </div>
       </div>
 
-      <div class="edu-bottom">
-        <h4>B.Tech – AI & ML</h4>
-        <p>SJC Institute of Technology, Chikkaballapur</p>
-        <p>VTU University</p>
-        <p>2022 – 2026 (8th Semester)</p>
+      <!-- B.Tech -->
+      <div class="education-full">
+        <h4>B.Tech – Artificial Intelligence & Machine Learning</h4>
+        <p>S. J. C. Institute of Technology, Chikkaballapur</p>
+        <p>Visvesvaraya Technological University (VTU)</p>
+        <p>2022 – 2026 | Currently 8th Semester</p>
       </div>
     </div>
 
-    <!-- PROJECTS -->
-   <h3 class="subsection-title">Projects</h3>
+    <!-- ===== PROJECTS ===== -->
+    <h3 class="subsection-title">Projects</h3>
 
-<div class="projects-grid">
+    <div class="projects-grid">
+      <div class="project-card glass">
+        <h4>SolarGuard AI</h4>
+        <p class="project-desc">
+          AI-powered solar panel inspection using Computer Vision
+          and Generative AI for automated compliance checks.
+        </p>
+        <div class="project-tags">
+          <span>Computer Vision</span>
+          <span>GenAI</span>
+          <span>Python</span>
+        </div>
+        <p class="project-outcome">⏱ Reduced inspection time by 70%</p>
+      </div>
 
-  <div class="project-card glass">
-    <h4>SolarGuard AI</h4>
-    <p class="project-desc">
-      AI-powered solar panel inspection using Computer Vision & Generative AI
-      to automate rooftop compliance checks.
-    </p>
+      <div class="project-card glass">
+        <h4>Smart Nagar AI</h4>
+        <p class="project-desc">
+          AI-driven governance platform for prioritizing
+          and resolving public issues efficiently.
+        </p>
+        <div class="project-tags">
+          <span>AI / ML</span>
+          <span>Web App</span>
+          <span>Analytics</span>
+        </div>
+        <p class="project-outcome">🏙 Faster civic issue resolution</p>
+      </div>
 
-    <div class="project-tags">
-      <span>Computer Vision</span>
-      <span>GenAI</span>
-      <span>Python</span>
+      <div class="project-card glass">
+        <h4>AI Reverse Shopping</h4>
+        <p class="project-desc">
+          Intelligent system that matches buyers and sellers
+          automatically based on requirements.
+        </p>
+        <div class="project-tags">
+          <span>NLP</span>
+          <span>Recommendation AI</span>
+          <span>Platform Design</span>
+        </div>
+        <p class="project-outcome">📈 85% better matching accuracy</p>
+      </div>
+
+      <div class="project-card glass">
+        <h4>AI Music Composer</h4>
+        <p class="project-desc">
+          Generative AI model that learns musical patterns
+          and composes original music automatically.
+        </p>
+        <div class="project-tags">
+          <span>Deep Learning</span>
+          <span>Generative AI</span>
+          <span>Music AI</span>
+        </div>
+        <p class="project-outcome">🎵 AI‑generated music tracks</p>
+      </div>
     </div>
-
-    <p class="project-outcome">
-      ⏱ Reduced inspection time by <b>70%</b>
-    </p>
   </div>
+</section>
 
-  <div class="project-card glass">
-    <h4>Smart Nagar AI</h4>
-    <p class="project-desc">
-      Intelligent governance platform for tracking and resolving public issues
-      using AI-based prioritization.
-    </p>
-
-    <div class="project-tags">
-      <span>AI / ML</span>
-      <span>Web App</span>
-      <span>Analytics</span>
-    </div>
-
-    <p class="project-outcome">
-      🏙 Faster civic issue resolution
-    </p>
-  </div>
-
-  <div class="project-card glass">
-    <h4>AI Reverse Shopping</h4>
-    <p class="project-desc">
-      AI system that matches buyers with sellers automatically based on
-      requirements instead of manual searching.
-    </p>
-
-    <div class="project-tags">
-      <span>NLP</span>
-      <span>Recommendation AI</span>
-      <span>Platform Design</span>
-    </div>
-
-    <p class="project-outcome">
-      📈 85% better matching accuracy
-    </p>
-  </div>
-
-  <div class="project-card glass">
-    <h4>AI Music Composer</h4>
-    <p class="project-desc">
-      Generative AI model that learns musical patterns and composes original
-      music tracks automatically.
-    </p>
-
-    <div class="project-tags">
-      <span>Deep Learning</span>
-      <span>Generative AI</span>
-      <span>Music AI</span>
-    </div>
-
-    <p class="project-outcome">
-      🎵 AI‑generated original music tracks
-    </p>
-  </div>
-
-</div>
-
-
-<!-- ========== SERVICES ========== -->
+<!-- ================= SERVICES ================= -->
 <section id="services" class="section">
   <div class="container">
     <h2>Services</h2>
@@ -154,12 +147,12 @@
     <div class="services-grid">
       <div class="service-card glass">
         <h4>AI & Automation</h4>
-        <p>Save 15+ hours/week</p>
+        <p>Save 15+ hours per week</p>
       </div>
 
       <div class="service-card glass">
         <h4>Web Solutions</h4>
-        <p>Modern & high‑conversion sites</p>
+        <p>Modern & high‑conversion websites</p>
       </div>
 
       <div class="service-card glass">
@@ -170,7 +163,7 @@
   </div>
 </section>
 
-<!-- ========== BLOGS ========== -->
+<!-- ================= BLOGS ================= -->
 <section id="blogs" class="section">
   <div class="container">
     <h2>Blogs</h2>
@@ -179,7 +172,7 @@
     <div class="blogs-grid">
       <div class="blog-card glass">
         <h4>How AI Is Changing Careers</h4>
-        <p>Future-proof skills you must learn</p>
+        <p>Future‑proof skills you must learn</p>
       </div>
 
       <div class="blog-card glass">
@@ -189,14 +182,14 @@
 
       <div class="blog-card glass">
         <h4>Automation with Python</h4>
-        <p>Real-life automation examples</p>
+        <p>Real‑world automation examples</p>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ========== FOOTER ========== -->
-<footer>
+<!-- ================= FOOTER ================= -->
+<footer class="footer">
   <p>© 2025 Mallem Dheeraj Royal</p>
 </footer>
 
