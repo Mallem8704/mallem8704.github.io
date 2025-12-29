@@ -894,6 +894,24 @@ section, .glass {
   .big-tagline { font-size: 1.2rem; }
 }
 
+/* ===== Animated Background ===== */
+body {
+  background: linear-gradient(
+    -45deg,
+    #0b1020,
+    #111735,
+    #0f1a40,
+    #070b17
+  );
+  background-size: 400% 400%;
+  animation: gradientMove 18s ease infinite;
+}
+
+@keyframes gradientMove {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
 
 
 
