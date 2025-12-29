@@ -54,3 +54,17 @@ const observer = new IntersectionObserver(
 
 animatedItems.forEach(item => observer.observe(item));
 
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add("show");
+    }
+  });
+}, { threshold: 0.15 });
+
+document.querySelectorAll(".glass").forEach(el => {
+  el.classList.add("reveal");
+  observer.observe(el);
+});
+
+
