@@ -3,42 +3,89 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Mallem Dheeraj Royal | AI & Tech Freelancer</title>
+  <title>Services | Mallem Dheeraj Royal</title>
 
-  <link rel="stylesheet" href="style.css"/>
+  <!-- Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="services.css">
 </head>
 <body>
-<!-- ================= SERVICES ================= -->
-<section id="services" class="section">
-  <div class="container">
-    <h2>Services</h2>
 
-    <div class="services-grid">
-      <div class="service-card glass">
-        <h4>AI & Automation</h4>
-        <p>Save 15+ hours per week</p>
-      </div>
+<!-- ===== TOP NAV ===== -->
+<header class="top-nav">
+  <button class="home-btn" onclick="window.location.href='index.html'">
+    <i class="fa-solid fa-house"></i>
+  </button>
+  <h1>My Services</h1>
+</header>
 
-      <div class="service-card glass">
-        <h4>Web Solutions</h4>
-        <p>Modern & high‑conversion websites</p>
-      </div>
+<!-- ===== SERVICES SECTION ===== -->
+<section class="services-section">
+  <div class="services-grid">
 
-      <div class="service-card glass">
-        <h4>Resume & LinkedIn</h4>
-        <p>3× interview callbacks</p>
-      </div>
+    <div class="service-card">
+      <i class="fa-solid fa-robot"></i>
+      <h3>AI Automation</h3>
+      <p>Automating tasks using AI tools to save time and boost productivity.</p>
     </div>
+
+    <div class="service-card">
+      <i class="fa-solid fa-brain"></i>
+      <h3>AI Consulting</h3>
+      <p>Helping businesses adopt AI solutions strategically and efficiently.</p>
+    </div>
+
+    <div class="service-card">
+      <i class="fa-solid fa-code"></i>
+      <h3>Web Development</h3>
+      <p>Modern, fast, and responsive websites with clean UI & animations.</p>
+    </div>
+
+    <div class="service-card">
+      <i class="fa-solid fa-chart-line"></i>
+      <h3>Business Automation</h3>
+      <p>Workflow automation for startups and professionals.</p>
+    </div>
+
+    <div class="service-card">
+      <i class="fa-solid fa-wand-magic-sparkles"></i>
+      <h3>Prompt Engineering</h3>
+      <p>Optimized AI prompts for ChatGPT, Midjourney, and GenAI tools.</p>
+    </div>
+
+    <div class="service-card">
+      <i class="fa-solid fa-graduation-cap"></i>
+      <h3>Mentorship</h3>
+      <p>Guidance for engineering students on mindset, skills, and career.</p>
+    </div>
+
+    <div class="service-card">
+      <i class="fa-solid fa-database"></i>
+      <h3>AI Projects</h3>
+      <p>Custom AI/ML project development for academic & real-world use.</p>
+    </div>
+
+    <div class="service-card">
+      <i class="fa-solid fa-pen-nib"></i>
+      <h3>Content & Blogs</h3>
+      <p>Technical and motivational content creation.</p>
+    </div>
+
   </div>
-  <div class="service-card glass" data-animate>
-
 </section>
-<!-- ================= FOOTER ================= -->
-<footer class="footer">
-  <p>© 2025 Mallem Dheeraj Royal</p>
-</footer>
 
-<script src="script.js"></script>
+<!-- ===== BOTTOM NAV ===== -->
+<nav class="bottom-nav">
+  <a href="portfolio.html"><i class="fa-solid fa-user"></i></a>
+  <a href="services.html" class="active"><i class="fa-solid fa-briefcase"></i></a>
+  <a href="blogs.html"><i class="fa-solid fa-pen"></i></a>
+  <a href="index.html"><i class="fa-solid fa-house"></i></a>
+</nav>
+
 </body>
 </html>
