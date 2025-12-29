@@ -3,186 +3,148 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Mallem Dheeraj Royal | AI & Tech Freelancer</title>
+  <title>Portfolio | Mallem Dheeraj Royal</title>
 
-  <link rel="stylesheet" href="style.css"/>
+  <!-- Main CSS -->
+  <link rel="stylesheet" href="portfolio.css">
+
+  <!-- Google Font -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
 </head>
+
 <body>
-  <!-- ================= PORTFOLIO ================= -->
-<section id="portfolio" class="section">
-  <div class="container">
-    <h2>Portfolio</h2>
 
-    <!-- ===== EDUCATION (SINGLE CARD) ===== -->
+<!-- ===== CYBER BACKGROUND ===== -->
+<div class="cyber-bg"></div>
+
+<!-- ===== TOP HOME BUTTON ===== -->
+<a href="index.html" class="top-home-btn">
+  <i class="fa-solid fa-house"></i>
+</a>
+
+<!-- ===== PAGE CONTENT ===== -->
+<div class="page-wrapper">
+
+  <!-- ===== PORTFOLIO ===== -->
+  <section class="section">
+    <h2 class="section-title">Portfolio</h2>
+
     <!-- ===== EDUCATION ===== -->
-<div class="education-card glass">
-  <h3 class="edu-title">Education</h3>
+    <div class="education-card glass" data-animate>
+      <h3 class="edu-title">🎓 Education</h3>
 
-  <!-- Top: 10th + Intermediate -->
-  <div class="edu-row">
-    <div class="edu-box">
-      <h4>🎓 10th Class</h4>
-      <p><strong>School:</strong> Valmeeki High School, Kadiri</p>
-      <p><strong>Board:</strong> SSC (AP State Board)</p>
-      <span class="edu-year">2020</span>
+      <div class="edu-row">
+        <div class="edu-box">
+          <h4>10th Class</h4>
+          <p>Valmeeki High School, Kadiri</p>
+          <span>SSC • 2020</span>
+        </div>
+
+        <div class="edu-box">
+          <h4>Intermediate</h4>
+          <p>Blue Moon International College</p>
+          <span>BIEAP • 2022</span>
+        </div>
+      </div>
+
+      <div class="edu-divider"></div>
+
+      <div class="edu-box full">
+        <h4>B.Tech – AI & ML</h4>
+        <p>SJC Institute of Technology, Chikkaballapur</p>
+        <span>VTU • 2022 – 2026</span>
+      </div>
     </div>
-
-    <div class="edu-box">
-      <h4>🎓 Intermediate</h4>
-      <p><strong>College:</strong> Blue Moon International College, Kadiri</p>
-      <p><strong>Board:</strong> BIEAP</p>
-      <span class="edu-year">2022</span>
-    </div>
-  </div>
-
-  <!-- Divider -->
-  <div class="edu-divider"></div>
-
-  <!-- Bottom: B.Tech -->
-  <div class="edu-box edu-full">
-    <h4>🎓 B.Tech – Artificial Intelligence & Machine Learning</h4>
-    <p><strong>College:</strong> S. J. C. Institute of Technology (SJCIT), Chikkaballapur</p>
-    <p><strong>University:</strong> Visvesvaraya Technological University (VTU), Belagavi</p>
-    <p><strong>Status:</strong> 2022 – 2026 | Currently 8th Semester</p>
-  </div>
-</div>
-<div class="education-card glass" data-animate>
 
     <!-- ===== PROJECTS ===== -->
-    <h3 class="subsection-title">Projects</h3>
+    <h3 class="sub-title">🚀 Projects</h3>
 
     <div class="projects-grid">
-      <div class="project-card glass">
+      <div class="project-card glass" data-animate>
         <h4>SolarGuard AI</h4>
-        <p class="project-desc">
-          AI-powered solar panel inspection using Computer Vision
-          and Generative AI for automated compliance checks.
-        </p>
-        <div class="project-tags">
-          <span>Computer Vision</span>
-          <span>GenAI</span>
-          <span>Python</span>
-        </div>
-        <p class="project-outcome">⏱ Reduced inspection time by 70%</p>
+        <p>AI-powered solar panel inspection using Computer Vision & GenAI.</p>
+        <span class="tag">Computer Vision</span>
+        <span class="tag">GenAI</span>
       </div>
 
-      <div class="project-card glass">
+      <div class="project-card glass" data-animate>
         <h4>Smart Nagar AI</h4>
-        <p class="project-desc">
-          AI-driven governance platform for prioritizing
-          and resolving public issues efficiently.
-        </p>
-        <div class="project-tags">
-          <span>AI / ML</span>
-          <span>Web App</span>
-          <span>Analytics</span>
-        </div>
-        <p class="project-outcome">🏙 Faster civic issue resolution</p>
+        <p>AI governance platform for resolving public issues efficiently.</p>
+        <span class="tag">AI/ML</span>
+        <span class="tag">Web</span>
       </div>
 
-      <div class="project-card glass">
+      <div class="project-card glass" data-animate>
         <h4>AI Reverse Shopping</h4>
-        <p class="project-desc">
-          Intelligent system that matches buyers and sellers
-          automatically based on requirements.
-        </p>
-        <div class="project-tags">
-          <span>NLP</span>
-          <span>Recommendation AI</span>
-          <span>Platform Design</span>
-        </div>
-        <p class="project-outcome">📈 85% better matching accuracy</p>
+        <p>Automatic buyer-seller matching using recommendation AI.</p>
+        <span class="tag">NLP</span>
+        <span class="tag">AI</span>
       </div>
 
-      <div class="project-card glass">
+      <div class="project-card glass" data-animate>
         <h4>AI Music Composer</h4>
-        <p class="project-desc">
-          Generative AI model that learns musical patterns
-          and composes original music automatically.
-        </p>
-        <div class="project-tags">
-          <span>Deep Learning</span>
-          <span>Generative AI</span>
-          <span>Music AI</span>
-        </div>
-        <p class="project-outcome">🎵 AI‑generated music tracks</p>
+        <p>Generative AI that composes original music.</p>
+        <span class="tag">Deep Learning</span>
+        <span class="tag">GenAI</span>
       </div>
     </div>
-</div>
-</section>
-      <!-- ========== ACHIEVEMENTS ========== -->
-<section id="achievements" class="section">
-  <div class="container">
-    <h2>Achievements</h2>
+  </section>
+
+  <!-- ===== ACHIEVEMENTS ===== -->
+  <section class="section">
+    <h2 class="section-title">Achievements</h2>
 
     <div class="timeline">
-      <!-- Item 1 -->
       <div class="timeline-item glass" data-animate>
-        <span class="timeline-dot"></span>
-        <div class="timeline-content">
-          <h4>📘 Author – Digital Motivational Book</h4>
-          <p>
-            Wrote a motivational book for engineering students focusing on
-            discipline, mindset, fitness, and career growth.
-          </p>
-          <a href="https://topmate.io/mallemdheeraj_royal/1819258"
-             target="_blank"
-             class="timeline-link">
-            🔗 View Book
-          </a>
-        </div>
+        <h4>📘 Digital Book Author</h4>
+        <p>Motivational book for engineering students.</p>
+        <a href="https://topmate.io/mallemdheeraj_royal/1819258" target="_blank">
+          View Book →
+        </a>
       </div>
 
-      <!-- Item 2 -->
       <div class="timeline-item glass" data-animate>
-        <span class="timeline-dot"></span>
-        <div class="timeline-content">
-          <h4>⚾ National‑Level Baseball Player</h4>
-          <p>Represented at national level, showcasing elite sports discipline and performance.</p>
-        </div>
+        <h4>⚾ National Level Baseball</h4>
+        <p>Represented at national competitions.</p>
       </div>
 
-      <!-- Item 3 -->
       <div class="timeline-item glass" data-animate>
-        <span class="timeline-dot"></span>
-        <div class="timeline-content">
-          <h4>🏏 State‑Level Cricket Player</h4>
-          <p>Demonstrated teamwork, consistency, and pressure handling at state level.</p>
-        </div>
+        <h4>🏏 State Level Cricket</h4>
+        <p>High-level competitive cricket experience.</p>
       </div>
 
-      <!-- Item 4 -->
       <div class="timeline-item glass" data-animate>
-        <span class="timeline-dot"></span>
-        <div class="timeline-content">
-          <h4>⚽ District‑Level Football Player</h4>
-          <p>Multi‑sport athlete with strong adaptability and endurance.</p>
-        </div>
+        <h4>⚽ District Level Football</h4>
+        <p>Multi-sport athletic experience.</p>
       </div>
     </div>
-  </div>
-  <div class="hero-card glass" onclick="window.location.href='portfolio.html'">
-  🎓 Portfolio
+  </section>
+
 </div>
 
-</section>
-  
-  </main>
-
-<!-- ===== BOTTOM ICON NAV ===== -->
+<!-- ===== BOTTOM NAV ===== -->
 <nav class="bottom-nav">
   <a href="portfolio.html" class="active"><i class="fa-solid fa-user"></i></a>
   <a href="services.html"><i class="fa-solid fa-briefcase"></i></a>
   <a href="blogs.html"><i class="fa-solid fa-pen"></i></a>
   <a href="index.html"><i class="fa-solid fa-house"></i></a>
 </nav>
-  <!-- ================= FOOTER ================= -->
-<footer class="footer">
-  <p>© 2025 Mallem Dheeraj Royal</p>
-</footer>
 
-<script src="script.js"></script>
+<!-- ===== ANIMATION SCRIPT ===== -->
+<script>
+const items = document.querySelectorAll("[data-animate]");
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(e => {
+    if (e.isIntersecting) e.target.classList.add("show");
+  });
+}, { threshold: 0.15 });
+
+items.forEach(i => observer.observe(i));
+</script>
+
 </body>
 </html>
-
