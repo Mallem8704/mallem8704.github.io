@@ -11,7 +11,7 @@
   <!-- Google Font -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 
-  <!-- Font Awesome Icons -->
+  <!-- Font Awesome -->
   <link rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
 </head>
@@ -22,7 +22,7 @@
 <div class="cyber-bg"></div>
 
 <!-- ===== TOP HOME BUTTON ===== -->
-<a href="index.html" class="top-home-btn">
+<a href="index.html" class="top-home-btn" title="Home">
   <i class="fa-solid fa-house"></i>
 </a>
 
@@ -74,13 +74,13 @@
       <div class="project-card glass" data-animate>
         <h4>Smart Nagar AI</h4>
         <p>AI governance platform for resolving public issues efficiently.</p>
-        <span class="tag">AI/ML</span>
+        <span class="tag">AI / ML</span>
         <span class="tag">Web</span>
       </div>
 
       <div class="project-card glass" data-animate>
         <h4>AI Reverse Shopping</h4>
-        <p>Automatic buyer-seller matching using recommendation AI.</p>
+        <p>Automatic buyer–seller matching using recommendation AI.</p>
         <span class="tag">NLP</span>
         <span class="tag">AI</span>
       </div>
@@ -108,18 +108,18 @@
       </div>
 
       <div class="timeline-item glass" data-animate>
-        <h4>⚾ National Level Baseball</h4>
+        <h4>⚾ National‑Level Baseball</h4>
         <p>Represented at national competitions.</p>
       </div>
 
       <div class="timeline-item glass" data-animate>
-        <h4>🏏 State Level Cricket</h4>
-        <p>High-level competitive cricket experience.</p>
+        <h4>🏏 State‑Level Cricket</h4>
+        <p>High‑level competitive cricket experience.</p>
       </div>
 
       <div class="timeline-item glass" data-animate>
-        <h4>⚽ District Level Football</h4>
-        <p>Multi-sport athletic experience.</p>
+        <h4>⚽ District‑Level Football</h4>
+        <p>Multi‑sport athletic experience.</p>
       </div>
     </div>
   </section>
@@ -134,6 +134,31 @@
   <a href="index.html"><i class="fa-solid fa-house"></i></a>
 </nav>
 
+<!-- ================= FLOATING CONTACT BAR ================= -->
+<div class="floating-contact">
+
+  <a href="https://wa.me/919059061099"
+     target="_blank"
+     class="float-btn whatsapp"
+     title="Chat on WhatsApp">
+    💬
+  </a>
+
+  <a href="mailto:mallemdheerajroyal@gmail.com"
+     class="float-btn email"
+     title="Send Email">
+    📧
+  </a>
+
+  <a href="https://www.linkedin.com/in/mallemdheeraj-royal-820469251"
+     target="_blank"
+     class="float-btn linkedin"
+     title="LinkedIn Profile">
+    💼
+  </a>
+
+</div>
+
 <!-- ===== ANIMATION SCRIPT ===== -->
 <script>
 const items = document.querySelectorAll("[data-animate]");
@@ -142,7 +167,6 @@ const observer = new IntersectionObserver(entries => {
     if (e.isIntersecting) e.target.classList.add("show");
   });
 }, { threshold: 0.15 });
-
 items.forEach(i => observer.observe(i));
 </script>
 
