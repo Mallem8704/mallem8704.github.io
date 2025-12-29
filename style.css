@@ -1007,6 +1007,29 @@ body::before {
 .hero-section * {
   pointer-events: auto;
 }
+/* ===== HERO VISIBILITY FIX ===== */
+.hero-section {
+  position: relative;
+  z-index: 2;
+}
+
+.hero-center {
+  position: relative;
+  z-index: 3;
+}
+
+body::before {
+  z-index: 0;
+}
+.hero-section {
+  min-height: 100vh;
+  width: 100%;
+}
+.hero-center {
+  max-width: 900px;
+  padding: 40px 20px;
+  text-align: center;
+}
 
 
 
