@@ -67,4 +67,18 @@ document.querySelectorAll(".glass").forEach(el => {
   observer.observe(el);
 });
 
+// ===== Hero button navigation fix =====
+document.querySelectorAll('.cyber-btn').forEach(btn => {
+  btn.addEventListener('click', () => {
+    const targetId = btn.getAttribute('data-target');
+    const targetSection = document.getElementById(targetId);
+
+    if (targetSection) {
+      targetSection.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start'
+      });
+    }
+  });
+});
 
