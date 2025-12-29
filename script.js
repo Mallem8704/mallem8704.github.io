@@ -23,3 +23,26 @@ const revealObserver = new IntersectionObserver(
 );
 
 revealElements.forEach((el) => revealObserver.observe(el));
+
+function scrollToSection(id) {
+  document.getElementById(id).scrollIntoView({
+    behavior: "smooth"
+  });
+}
+
+/* ===== Scroll Reveal for Services ===== */
+const serviceCards = document.querySelectorAll(".service-card");
+
+const serviceObserver = new IntersectionObserver(
+  entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("show");
+      }
+    });
+  },
+  { threshold: 0.2 }
+);
+
+serviceCards.forEach(card => serviceObserver.observe(card));
+
