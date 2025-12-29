@@ -1,249 +1,161 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Mallem Dheeraj Royal | AI & Tech Freelancer</title>
-  <link rel="stylesheet" href="style.css">
+
+  <link rel="stylesheet" href="style.css" />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
+
 <body>
 
-  <section id="hero" class="hero-section">
-    <div class="container">
-      <div class="hero-header">
-        <img src="public/whatsapp_image_2025-12-28_at_8.37.10_pm.jpeg" alt="Mallem Dheeraj Royal" class="profile-photo">
-        <div class="hero-text">
-          <h1 class="hero-name">Mallem Dheeraj Royal</h1>
-          <p class="hero-tagline">AI & Tech Solutions Specialist</p>
-        </div>
-      </div>
+<!-- HERO -->
+<section id="hero" class="hero-section">
+  <div class="container">
 
-      <p class="hero-intro">
-        I help businesses and professionals leverage AI, automation, and technology to solve real problems and drive measurable results. From intelligent automation to digital transformation, I deliver solutions that save time, reduce costs, and accelerate growth.
-      </p>
-
-      <div class="hero-cards">
-        <button class="hero-card" onclick="scrollToSection('portfolio')">
-          <div class="card-icon">
-            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <path d="M22 10v6M2 10l10-5 10 5-10 5z"/>
-              <path d="M6 12v5c3 3 9 3 12 0v-5"/>
-            </svg>
-          </div>
-          <h3>Portfolio</h3>
-          <p>Explore my education, skills, and projects</p>
-        </button>
-
-        <button class="hero-card" onclick="scrollToSection('services')">
-          <div class="card-icon">
-            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <rect x="2" y="7" width="20" height="14" rx="2"/>
-              <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/>
-            </svg>
-          </div>
-          <h3>Services</h3>
-          <p>Discover how I can help your business grow</p>
-        </button>
+    <div class="hero-header">
+      <img src="public/profile.jpg" alt="Mallem Dheeraj Royal" class="profile-photo" />
+      <div>
+        <h1 class="hero-name">Mallem Dheeraj Royal</h1>
+        <p class="hero-tagline">AI & Tech Solutions Specialist</p>
       </div>
     </div>
-  </section>
 
-  <section id="portfolio" class="portfolio-section">
-    <div class="container">
-      <div class="section-header">
-        <h2>Portfolio</h2>
-        <p>Building trust through education, expertise, and proven results</p>
-      </div>
+    <p class="hero-intro">
+      I help businesses, founders, and professionals use <strong>AI, automation, and modern technology</strong>
+      to save time, reduce costs, and scale faster.
+    </p>
 
-      <div class="education-card">
-        <div class="education-icon">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-            <path d="M22 10v6M2 10l10-5 10 5-10 5z"/>
-            <path d="M6 12v5c3 3 9 3 12 0v-5"/>
-          </svg>
-        </div>
-        <div class="education-content">
-          <h3>Education</h3>
-          <p class="degree">B.Tech in Artificial Intelligence & Machine Learning</p>
-          <p class="institution">SJC Institute of Technology (VTU)</p>
-          <p class="duration">2022 - 2026</p>
-        </div>
-      </div>
+    <div class="hero-cards">
+      <button class="hero-card" onclick="scrollToSection('portfolio')">
+        <div class="card-icon">📁</div>
+        <h3>Portfolio</h3>
+        <p>Education, skills & real projects</p>
+      </button>
 
-      <h3 class="subsection-title">Technical Skills</h3>
-      <div class="skills-grid">
-        <span class="skill-tag">Python</span>
-        <span class="skill-tag">SQL</span>
-        <span class="skill-tag">Machine Learning</span>
-        <span class="skill-tag">AI Automation</span>
-        <span class="skill-tag">Data Analysis</span>
-        <span class="skill-tag">Excel & Google Sheets</span>
-        <span class="skill-tag">Dashboard Development</span>
-        <span class="skill-tag">Web Development</span>
-        <span class="skill-tag">Content Strategy</span>
-      </div>
+      <button class="hero-card" onclick="scrollToSection('services')">
+        <div class="card-icon">⚙️</div>
+        <h3>Services</h3>
+        <p>How I help clients grow</p>
+      </button>
+    </div>
 
-      <h3 class="subsection-title">Featured Projects</h3>
-      <div class="projects-grid">
-        <div class="project-card">
-          <h4>SolarGuard AI</h4>
-          <p class="project-desc">AI-powered verification system combining computer vision and generative AI for automated rooftop solar panel inspection and compliance checking.</p>
-          <div class="project-tools">
-            <span>Computer Vision</span>
-            <span>GenAI</span>
-            <span>Python</span>
-          </div>
-          <p class="project-outcome">Reduced manual inspection time by 70% and improved accuracy</p>
-        </div>
+  </div>
+</section>
 
-        <div class="project-card">
-          <h4>Smart Nagar AI</h4>
-          <p class="project-desc">Intelligent governance platform using AI to track, prioritize, and resolve public issues efficiently through automated categorization and smart routing.</p>
-          <div class="project-tools">
-            <span>AI/ML</span>
-            <span>Web Development</span>
-            <span>Data Analytics</span>
-          </div>
-          <p class="project-outcome">Streamlined civic issue resolution and enhanced transparency</p>
-        </div>
+<!-- PORTFOLIO -->
+<section id="portfolio" class="portfolio-section">
+  <div class="container">
 
-        <div class="project-card">
-          <h4>AI Reverse Shopping</h4>
-          <p class="project-desc">Revolutionary marketplace platform where AI analyzes buyer requirements and matches them with optimal sellers, reversing traditional e-commerce dynamics.</p>
-          <div class="project-tools">
-            <span>Recommendation AI</span>
-            <span>NLP</span>
-            <span>Platform Design</span>
-          </div>
-          <p class="project-outcome">Improved buyer-seller matching efficiency by 85%</p>
-        </div>
+    <div class="section-header">
+      <h2>Portfolio</h2>
+      <p>Trust is built through proof & execution</p>
+    </div>
+
+    <!-- Education -->
+    <div class="education-card">
+      <div class="education-icon">🎓</div>
+      <div>
+        <h3>B.Tech – AI & Machine Learning</h3>
+        <p>SJC Institute of Technology (VTU)</p>
+        <p class="duration">2022 – 2026</p>
       </div>
     </div>
-  </section>
 
-  <section id="services" class="services-section">
-    <div class="container">
-      <div class="section-header">
-        <h2>Services</h2>
-        <p>Transforming challenges into opportunities with proven solutions</p>
+    <!-- Skills -->
+    <h3 class="subsection-title">Skills</h3>
+    <div class="skills-grid">
+      <span class="skill-tag">Python</span>
+      <span class="skill-tag">AI Automation</span>
+      <span class="skill-tag">Machine Learning</span>
+      <span class="skill-tag">SQL</span>
+      <span class="skill-tag">Data Dashboards</span>
+      <span class="skill-tag">Web Development</span>
+    </div>
+
+    <!-- Projects -->
+    <h3 class="subsection-title">Projects</h3>
+    <div class="projects-grid">
+
+      <div class="project-card">
+        <h4>SolarGuard AI</h4>
+        <p>AI-powered solar rooftop inspection using computer vision & GenAI.</p>
+        <p class="project-outcome">⏱ Reduced inspection time by 70%</p>
       </div>
 
-      <div class="services-grid">
-        <div class="service-card">
-          <div class="service-icon">
-            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/>
-              <polyline points="3.27 6.96 12 12.01 20.73 6.96"/>
-              <line x1="12" y1="22.08" x2="12" y2="12"/>
-            </svg>
-          </div>
-          <h3>Automation Solutions</h3>
-          <p class="service-desc">Transform manual, time-consuming tasks into automated workflows that run seamlessly.</p>
-          <div class="service-example">
-            <p class="before">Before: Hours spent on Excel reports and data entry</p>
-            <p class="after">After: Automated dashboards with real-time insights</p>
-          </div>
-          <p class="service-value">Save 15+ hours per week and eliminate human errors</p>
-        </div>
-
-        <div class="service-card">
-          <div class="service-icon">
-            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <circle cx="12" cy="12" r="10"/>
-              <path d="M12 6v6l4 2"/>
-            </svg>
-          </div>
-          <h3>Tech & Web Solutions</h3>
-          <p class="service-desc">Custom websites, web applications, and digital tools tailored to your business needs.</p>
-          <div class="service-example">
-            <p class="before">Before: Outdated web presence hurting credibility</p>
-            <p class="after">After: Modern, responsive website driving conversions</p>
-          </div>
-          <p class="service-value">Increase online engagement by 3x and boost credibility</p>
-        </div>
-
-        <div class="service-card">
-          <div class="service-icon">
-            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
-            </svg>
-          </div>
-          <h3>AI & Tool Integration</h3>
-          <p class="service-desc">Integrate cutting-edge AI tools and systems to enhance productivity and decision-making.</p>
-          <div class="service-example">
-            <p class="before">Before: Manual processes limiting scalability</p>
-            <p class="after">After: AI-powered systems handling complex tasks</p>
-          </div>
-          <p class="service-value">10x processing speed and unlock new capabilities</p>
-        </div>
-
-        <div class="service-card">
-          <div class="service-icon">
-            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
-              <polyline points="14 2 14 8 20 8"/>
-              <line x1="16" y1="13" x2="8" y2="13"/>
-              <line x1="16" y1="17" x2="8" y2="17"/>
-              <polyline points="10 9 9 9 8 9"/>
-            </svg>
-          </div>
-          <h3>Resume & LinkedIn Optimization</h3>
-          <p class="service-desc">ATS-optimized resumes and LinkedIn profiles that get you noticed by recruiters and employers.</p>
-          <div class="service-example">
-            <p class="before">Before: Resume ignored by ATS systems</p>
-            <p class="after">After: Optimized profile getting multiple interviews</p>
-          </div>
-          <p class="service-value">3x higher callback rate from job applications</p>
-        </div>
-
-        <div class="service-card">
-          <div class="service-icon">
-            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/>
-            </svg>
-          </div>
-          <h3>Content & Digital Strategy</h3>
-          <p class="service-desc">Strategic content creation and digital marketing that builds your brand and drives engagement.</p>
-          <div class="service-example">
-            <p class="before">Before: Low engagement and limited reach</p>
-            <p class="after">After: Consistent, high-quality content with growing audience</p>
-          </div>
-          <p class="service-value">5x engagement growth and stronger brand presence</p>
-        </div>
+      <div class="project-card">
+        <h4>Smart Nagar AI</h4>
+        <p>AI platform for smart governance & public issue tracking.</p>
+        <p class="project-outcome">📊 Improved civic response efficiency</p>
       </div>
-    </div>
-  </section>
 
-  <section id="cta" class="cta-section">
-    <div class="container">
-      <h2>Let's Work Together</h2>
-      <p>Ready to transform your business with AI and technology? Let's discuss how I can help you achieve your goals.</p>
-      <div class="cta-buttons">
-        <a href="mailto:mallemdheerajroyal@gmail.com" class="cta-button primary">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
-            <polyline points="22,6 12,13 2,6"/>
-          </svg>
-          Send Email
-        </a>
-        <a href="https://wa.me/919059061099" class="cta-button secondary" target="_blank" rel="noopener noreferrer">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-            <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/>
-          </svg>
-          WhatsApp Chat
-        </a>
+      <div class="project-card">
+        <h4>AI Reverse Shopping</h4>
+        <p>AI matches buyers with best sellers automatically.</p>
+        <p class="project-outcome">⚡ 85% better matching accuracy</p>
       </div>
-    </div>
-  </section>
 
-  <footer class="footer">
-    <div class="container">
-      <p>&copy; 2025 Mallem Dheeraj Royal. All rights reserved.</p>
-      <p class="footer-built">Built with GitHub Pages</p>
     </div>
-  </footer>
 
-  <script src="script.js"></script>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section id="services" class="services-section">
+  <div class="container">
+
+    <div class="section-header">
+      <h2>Services</h2>
+      <p>Services make money — results matter</p>
+    </div>
+
+    <div class="services-grid">
+
+      <div class="service-card">
+        <h3>AI Automation</h3>
+        <p class="before">Before: Manual reports & repetitive work</p>
+        <p class="after">After: Fully automated workflows</p>
+        <p class="service-value">Save 15+ hrs/week</p>
+      </div>
+
+      <div class="service-card">
+        <h3>Web & Tech Solutions</h3>
+        <p class="before">Before: Low‑trust outdated website</p>
+        <p class="after">After: High‑conversion modern site</p>
+        <p class="service-value">3× engagement</p>
+      </div>
+
+      <div class="service-card">
+        <h3>Resume & LinkedIn</h3>
+        <p class="before">Before: No ATS callbacks</p>
+        <p class="after">After: Interview‑ready profile</p>
+        <p class="service-value">3× response rate</p>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-section">
+  <div class="container">
+    <h2>Let’s Work Together</h2>
+    <p>Have an idea or problem? Let’s build a solution.</p>
+
+    <div class="cta-buttons">
+      <a href="mailto:mallemdheerajroyal@gmail.com" class="cta-button primary">Email Me</a>
+      <a href="https://wa.me/919059061099" class="cta-button secondary" target="_blank">WhatsApp</a>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <p>© 2025 Mallem Dheeraj Royal</p>
+</footer>
+
+<script src="script.js"></script>
 </body>
 </html>
