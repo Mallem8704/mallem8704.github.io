@@ -666,6 +666,85 @@ section, .glass {
 .highlight-achievement {
   animation: glowPulse 3s ease-in-out infinite;
 }
+/* ================= ACHIEVEMENTS ================= */
+.section-title {
+  text-align: center;
+  font-size: 2.4rem;
+  margin-bottom: 10px;
+}
+
+.section-subtitle {
+  text-align: center;
+  color: var(--text-muted);
+  margin-bottom: 50px;
+}
+
+.achievements-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 28px;
+}
+
+.achievement-card {
+  padding: 28px;
+  text-decoration: none;
+  color: var(--text-main);
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform 0.45s ease, box-shadow 0.45s ease;
+}
+
+/* Hover lift + tilt */
+.achievement-card:hover {
+  transform: translateY(-14px) scale(1.03);
+  box-shadow: 0 40px 80px rgba(0, 0, 0, 0.6);
+}
+
+/* Glow border */
+.achievement-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 18px;
+  border: 1px solid rgba(77, 163, 255, 0.5);
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+.achievement-card:hover::before {
+  opacity: 1;
+}
+
+/* Icon animation */
+.achievement-icon {
+  font-size: 2.6rem;
+  margin-bottom: 14px;
+  animation: floatIcon 3s ease-in-out infinite;
+}
+
+@keyframes floatIcon {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-6px); }
+}
+
+.achievement-card h4 {
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+}
+
+.achievement-card p {
+  color: var(--text-muted);
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+/* CTA */
+.achievement-cta {
+  display: inline-block;
+  margin-top: 14px;
+  color: var(--primary);
+  font-weight: 600;
+}
 
 
 
