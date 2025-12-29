@@ -36,3 +36,21 @@ document.querySelectorAll(".achievement-card").forEach(card => {
 
 window.addEventListener("scroll", revealOnScroll);
 window.addEventListener("load", revealOnScroll);
+
+// Scroll reveal animation
+const animatedItems = document.querySelectorAll("[data-animate]");
+
+const observer = new IntersectionObserver(
+  entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.style.animation = "fadeUp 0.9s ease forwards";
+        observer.unobserve(entry.target);
+      }
+    });
+  },
+  { threshold: 0.15 }
+);
+
+animatedItems.forEach(item => observer.observe(item));
+
