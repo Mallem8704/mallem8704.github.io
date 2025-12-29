@@ -613,5 +613,60 @@ section, .glass {
   background: rgba(255,255,255,0.12);
 }
 
+/* ===== ACHIEVEMENT BUTTON ===== */
+.achievement-btn {
+  display: inline-block;
+  margin-top: 14px;
+  padding: 10px 18px;
+  border-radius: 999px;
+  background: linear-gradient(135deg, #4da3ff, #7dd3fc);
+  color: #000;
+  font-weight: 600;
+  font-size: 0.85rem;
+  text-decoration: none;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.achievement-btn:hover {
+  transform: translateY(-3px) scale(1.05);
+  box-shadow: 0 12px 25px rgba(77,163,255,0.45);
+}
+
+/* ===== HIGHLIGHT FEATURED ACHIEVEMENT ===== */
+.highlight-achievement {
+  border: 2px solid rgba(77,163,255,0.6);
+  background: linear-gradient(
+    135deg,
+    rgba(77,163,255,0.18),
+    rgba(255,255,255,0.06)
+  );
+  position: relative;
+}
+
+/* glowing badge */
+.highlight-achievement::before {
+  content: "FEATURED";
+  position: absolute;
+  top: 14px;
+  right: 16px;
+  font-size: 0.65rem;
+  font-weight: 700;
+  color: #000;
+  background: #7dd3fc;
+  padding: 4px 8px;
+  border-radius: 999px;
+}
+
+/* subtle glow animation */
+@keyframes glowPulse {
+  0%, 100% { box-shadow: 0 0 0 rgba(77,163,255,0.4); }
+  50% { box-shadow: 0 0 25px rgba(77,163,255,0.6); }
+}
+
+.highlight-achievement {
+  animation: glowPulse 3s ease-in-out infinite;
+}
+
+
 
 
