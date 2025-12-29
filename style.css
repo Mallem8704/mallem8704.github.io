@@ -1030,6 +1030,18 @@ body::before {
   padding: 40px 20px;
   text-align: center;
 }
+/ (root)
+│
+├── index.html        ← Home (profile + intro)
+├── portfolio.html    ← Portfolio page
+├── services.html     ← Services page
+├── blogs.html        ← Blogs page
+│
+├── style.css
+├── script.js
+└── images/
+    └── profile.jpg
+
 
 
 
