@@ -746,6 +746,67 @@ section, .glass {
   font-weight: 600;
 }
 
+/* ================= ACHIEVEMENTS TIMELINE ================= */
+.timeline {
+  position: relative;
+  margin-top: 50px;
+  padding-left: 30px;
+}
+
+.timeline::before {
+  content: "";
+  position: absolute;
+  left: 14px;
+  top: 0;
+  width: 3px;
+  height: 100%;
+  background: linear-gradient(to bottom, #4da3ff, transparent);
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 40px;
+  padding-left: 40px;
+  cursor: pointer;
+}
+
+.timeline-dot {
+  position: absolute;
+  left: -2px;
+  top: 20px;
+  width: 14px;
+  height: 14px;
+  background: #4da3ff;
+  border-radius: 50%;
+  box-shadow: 0 0 15px rgba(77,163,255,0.8);
+}
+
+.timeline-content h4 {
+  margin-bottom: 8px;
+  font-size: 1.2rem;
+}
+
+.timeline-content p {
+  color: var(--text-muted);
+  font-size: 0.95rem;
+}
+
+.timeline-link {
+  display: inline-block;
+  margin-top: 10px;
+  color: #7dd3fc;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.timeline-link:hover {
+  text-decoration: underline;
+}
+
+/* Hover animation */
+.timeline-item:hover {
+  transform: translateX(6px);
+}
 
 
 
