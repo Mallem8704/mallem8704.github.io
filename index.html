@@ -7,13 +7,14 @@
   <link rel="stylesheet" href="style.css"/>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
+
 <body>
 
-<!-- ================= HERO ================= -->
-<section class="hero-section">
+<!-- ========== HERO ========== -->
+<section id="hero" class="hero-section">
   <div class="container">
     <div class="hero-header">
-      <img src="WhatsApp Image 2025-12-28 at 8.37.10 PM.jpeg" class="profile-photo" alt="Profile">
+      <img src="WhatsApp Image 2025-12-28 at 8.37.10 PM.jpeg" class="profile-photo">
       <div>
         <h1>Mallem Dheeraj Royal</h1>
         <p class="tagline">AI & Tech Solutions Specialist</p>
@@ -21,35 +22,35 @@
     </div>
 
     <p class="hero-intro">
-      I help businesses and individuals use AI, automation, and technology to
-      save time, reduce effort, and grow faster.
+      I help businesses & professionals grow using AI, automation and modern technology.
     </p>
 
-    <div class="hero-actions">
-      <button onclick="scrollToSection('portfolio')">Portfolio</button>
-      <button onclick="scrollToSection('services')">Services</button>
+    <div class="hero-cards">
+      <div class="hero-card glass" onclick="scrollToSection('portfolio')">🎓 Portfolio</div>
+      <div class="hero-card glass" onclick="scrollToSection('services')">🚀 Services</div>
+      <div class="hero-card glass" onclick="scrollToSection('blogs')">✍️ Blogs</div>
     </div>
   </div>
 </section>
 
-<!-- ================= PORTFOLIO ================= -->
-<section id="portfolio">
+<!-- ========== PORTFOLIO ========== -->
+<section id="portfolio" class="section">
   <div class="container">
     <h2>Portfolio</h2>
 
-    <!-- EDUCATION -->
-    <div class="education-card">
+    <!-- EDUCATION (ONE CARD) -->
+    <div class="education-card glass">
       <h3>Education</h3>
 
       <div class="edu-top">
-        <div class="edu-box">
+        <div>
           <h4>10th Class</h4>
           <p>Valmeeki High School, Kadiri</p>
           <p>SSC – AP Board</p>
           <p>2020</p>
         </div>
 
-        <div class="edu-box">
+        <div>
           <h4>Intermediate</h4>
           <p>Blue Moon International College</p>
           <p>BIEAP</p>
@@ -58,7 +59,7 @@
       </div>
 
       <div class="edu-bottom">
-        <h4>B.Tech – AIML</h4>
+        <h4>B.Tech – AI & ML</h4>
         <p>SJC Institute of Technology, Chikkaballapur</p>
         <p>VTU University</p>
         <p>2022 – 2026 (8th Semester)</p>
@@ -66,67 +67,98 @@
     </div>
 
     <!-- PROJECTS -->
-    <h3>Projects</h3>
-    <div class="projects-grid">
-      <div class="project-card">
-        <h4>SolarGuard AI</h4>
-        <p>AI-based solar panel inspection using Computer Vision.</p>
-      </div>
+    <!-- ===== PROJECTS ===== -->
+<h3 class="subsection-title">Featured Projects</h3>
 
-      <div class="project-card">
-        <h4>Smart Nagar AI</h4>
-        <p>AI-powered public issue tracking platform.</p>
-      </div>
+<div class="project-filters">
+  <button class="filter-btn active" data-filter="all">All</button>
+  <button class="filter-btn" data-filter="ai">AI</button>
+  <button class="filter-btn" data-filter="web">Web</button>
+  <button class="filter-btn" data-filter="automation">Automation</button>
+</div>
 
-      <div class="project-card">
-        <h4>AI Reverse Shopping</h4>
-        <p>AI matches buyers with best sellers automatically.</p>
-      </div>
+<div class="projects-grid">
+  <!-- PROJECT 1 -->
+  <a href="projects/solarguard.html" class="project-card glass fade-up" data-category="ai">
+    <img src="images/solarguard.jpg" alt="SolarGuard AI">
+    <h4>SolarGuard AI</h4>
+    <p>AI-based solar panel inspection using Computer Vision.</p>
+    <span class="tag">AI</span>
+  </a>
 
-      <div class="project-card">
-        <h4>AI Music Composer</h4>
-        <p>Generative AI system that composes original music.</p>
-      </div>
-    </div>
-  </div>
-</section>
+  <!-- PROJECT 2 -->
+  <a href="projects/smartnagar.html" class="project-card glass fade-up" data-category="ai">
+    <img src="images/smartnagar.jpg" alt="Smart Nagar AI">
+    <h4>Smart Nagar AI</h4>
+    <p>AI-powered public issue tracking system.</p>
+    <span class="tag">AI</span>
+  </a>
 
-<!-- ================= SERVICES ================= -->
-<section id="services">
+  <!-- PROJECT 3 -->
+  <a href="projects/reverseshopping.html" class="project-card glass fade-up" data-category="web">
+    <img src="images/reverse-shopping.jpg" alt="AI Reverse Shopping">
+    <h4>AI Reverse Shopping</h4>
+    <p>Buyer-seller matching using AI.</p>
+    <span class="tag">Web</span>
+  </a>
+
+  <!-- PROJECT 4 -->
+  <a href="projects/aimusic.html" class="project-card glass fade-up" data-category="ai">
+    <img src="images/ai-music.jpg" alt="AI Music Composer">
+    <h4>AI Music Composer</h4>
+    <p>Generative AI system that composes music.</p>
+    <span class="tag">AI</span>
+  </a>
+</div>
+
+<!-- ========== SERVICES ========== -->
+<section id="services" class="section">
   <div class="container">
     <h2>Services</h2>
 
     <div class="services-grid">
-      <div class="service-card">
+      <div class="service-card glass">
         <h4>AI & Automation</h4>
-        <p>Automate manual work and save time.</p>
+        <p>Save 15+ hours/week</p>
       </div>
 
-      <div class="service-card">
-        <h4>Web & Tech Solutions</h4>
-        <p>Modern websites & dashboards.</p>
+      <div class="service-card glass">
+        <h4>Web Solutions</h4>
+        <p>Modern & high‑conversion sites</p>
       </div>
 
-      <div class="service-card">
+      <div class="service-card glass">
         <h4>Resume & LinkedIn</h4>
-        <p>ATS‑optimized profiles.</p>
-      </div>
-
-      <div class="service-card">
-        <h4>Content Strategy</h4>
-        <p>Brand growth & engagement.</p>
+        <p>3× interview callbacks</p>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ================= CTA ================= -->
-<section class="cta">
-  <h2>Let’s Work Together</h2>
-  <a href="mailto:mallemdheerajroyal@gmail.com">Email Me</a>
-  <a href="https://wa.me/919059061099" target="_blank">WhatsApp</a>
+<!-- ========== BLOGS ========== -->
+<section id="blogs" class="section">
+  <div class="container">
+    <h2>Blogs</h2>
+    <div class="blogs-grid">
+      <div class="blog-card glass">
+        <h4>How AI Is Changing Careers</h4>
+        <p>Future-proof skills you must learn</p>
+      </div>
+
+      <div class="blog-card glass">
+        <h4>Best AI Tools for Students</h4>
+        <p>Free & paid tools that save time</p>
+      </div>
+
+      <div class="blog-card glass">
+        <h4>Automation with Python</h4>
+        <p>Real-life automation examples</p>
+      </div>
+    </div>
+  </div>
 </section>
 
+<!-- ========== FOOTER ========== -->
 <footer>
   <p>© 2025 Mallem Dheeraj Royal</p>
 </footer>
