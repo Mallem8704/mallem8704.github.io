@@ -999,6 +999,14 @@ body::before {
     0 0 0 1px rgba(56,189,248,0.6),
     0 0 30px rgba(56,189,248,0.5);
 }
+.hero-card {
+  pointer-events: auto;
+  cursor: pointer;
+}
+
+.hero-section * {
+  pointer-events: auto;
+}
 
 
 
