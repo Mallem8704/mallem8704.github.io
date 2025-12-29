@@ -5,108 +5,82 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Blogs | Mallem Dheeraj Royal</title>
 
-  <!-- CSS -->
-  <link rel="stylesheet" href="blog.css" />
-
-  <!-- Fonts -->
+  <!-- Google Font -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 
-  <!-- Icons -->
-  <script src="https://kit.fontawesome.com/a2e8c6cfd3.js" crossorigin="anonymous"></script>
+  <!-- Font Awesome (VERY IMPORTANT – ICON FIX) -->
+  <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+
+  <!-- Main CSS -->
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-<!-- ===== TOP HOME ICON ===== -->
-<a href="index.html" class="home-btn">
-  <i class="fa-solid fa-house"></i>
-</a>
+<!-- ================= CYBER BACKGROUND ================= -->
+<div class="cyber-bg"></div>
 
-<!-- ===== BLOG SECTION ===== -->
+<!-- ================= TOP HOME BUTTON ================= -->
+<header class="top-nav">
+  <a href="index.html" class="home-btn">
+    <i class="fa-solid fa-house"></i>
+  </a>
+</header>
+
+<!-- ================= BLOGS SECTION ================= -->
 <section class="section">
   <div class="container">
-    <h1 class="page-title">✍️ Blogs & Insights</h1>
-    <p class="page-subtitle">
-      Thoughts on AI, productivity, engineering mindset, and personal growth
-    </p>
+
+    <h2 class="section-title">Blogs & Insights</h2>
 
     <div class="blogs-grid">
 
-      <!-- Blog 1 -->
-      <div class="blog-card glass">
-        <h3>🚀 How AI Is Changing Engineering Careers</h3>
-        <p>
-          AI is no longer optional for engineers. From automation to decision‑making,
-          this blog explains how students and professionals can stay relevant.
-        </p>
-        <span class="blog-tag">AI & Careers</span>
+      <div class="blog-card glass" data-animate>
+        <h3>🤖 AI for Students</h3>
+        <p>How engineering students can use AI tools to boost learning,
+           productivity, and placements.</p>
+        <span class="blog-tag">AI • Students</span>
       </div>
 
-      <!-- Blog 2 -->
-      <div class="blog-card glass">
-        <h3>🧠 Discipline Beats Motivation</h3>
-        <p>
-          Motivation fades. Discipline stays. Learn how daily systems
-          create long‑term success in studies, fitness, and career.
-        </p>
+      <div class="blog-card glass" data-animate>
+        <h3>💻 Freelancing with AI</h3>
+        <p>Using AI automation to deliver faster, smarter freelance projects.</p>
+        <span class="blog-tag">Freelancing</span>
+      </div>
+
+      <div class="blog-card glass" data-animate>
+        <h3>🧠 Discipline & Mindset</h3>
+        <p>Lessons from sports, fitness, and consistency applied to tech careers.</p>
         <span class="blog-tag">Mindset</span>
       </div>
 
-      <!-- Blog 3 -->
-      <div class="blog-card glass">
-        <h3>⚙️ How Engineering Students Should Use AI Tools</h3>
-        <p>
-          A practical guide on using ChatGPT, automation tools,
-          and AI workflows without becoming dependent.
-        </p>
-        <span class="blog-tag">AI Tools</span>
-      </div>
-
-      <!-- Blog 4 -->
-      <div class="blog-card glass">
-        <h3>📚 Making the Most of 4 Years of Engineering</h3>
-        <p>
-          Internships, projects, fitness, mindset, and networking —
-          how to avoid regret after graduation.
-        </p>
-        <span class="blog-tag">Student Life</span>
-      </div>
-
-      <!-- Blog 5 -->
-      <div class="blog-card glass">
-        <h3>🏋️ Fitness & Focus for Tech Professionals</h3>
-        <p>
-          Physical fitness directly impacts mental clarity,
-          productivity, and long‑term performance.
-        </p>
-        <span class="blog-tag">Health</span>
-      </div>
-
-      <!-- Blog 6 -->
-      <div class="blog-card glass">
-        <h3>💡 Why Every Developer Should Build in Public</h3>
-        <p>
-          Sharing progress builds confidence, attracts opportunities,
-          and creates accountability.
-        </p>
-        <span class="blog-tag">Personal Branding</span>
+      <div class="blog-card glass highlight" data-animate>
+        <h3>📘 Digital Book</h3>
+        <p>My motivational digital book for engineering students.</p>
+        <a href="https://topmate.io/mallemdheeraj_royal/1819258"
+           target="_blank" class="blog-link">
+          🔗 View Book
+        </a>
       </div>
 
     </div>
   </div>
 </section>
 
-<!-- ===== BOTTOM NAVIGATION ===== -->
+<!-- ================= BOTTOM ICON NAV ================= -->
 <nav class="bottom-nav">
-  <a href="index.html"><i class="fa-solid fa-house"></i></a>
   <a href="portfolio.html"><i class="fa-solid fa-user"></i></a>
   <a href="services.html"><i class="fa-solid fa-briefcase"></i></a>
   <a href="blogs.html" class="active"><i class="fa-solid fa-pen"></i></a>
+  <a href="index.html"><i class="fa-solid fa-house"></i></a>
 </nav>
 
-<!-- ===== FOOTER ===== -->
+<!-- ================= FOOTER ================= -->
 <footer class="footer">
   <p>© 2025 Mallem Dheeraj Royal</p>
 </footer>
 
+<script src="script.js"></script>
 </body>
 </html>
