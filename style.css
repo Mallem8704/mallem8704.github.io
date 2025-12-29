@@ -367,3 +367,63 @@ section, .glass {
   transform: translateY(-10px) scale(1.02);
 }
 
+/* ================= SCROLL REVEAL ================= */
+.glass,
+.project-card,
+.service-card,
+.blog-card {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.7s ease;
+}
+
+.reveal {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.projects-grid {
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  align-items: stretch;
+}
+
+.project-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 260px;
+}
+
+.glass {
+  background: rgba(255, 255, 255, 0.07);
+  backdrop-filter: blur(14px);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.project-card:hover,
+.service-card:hover,
+.blog-card:hover {
+  transform: translateY(-8px) scale(1.015);
+}
+
+.blogs-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 24px;
+  margin-top: 30px;
+}
+
+.blog-card {
+  padding: 24px;
+}
+
+@media (max-width: 768px) {
+  .hero-header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-cards {
+    grid-template-columns: 1fr;
+  }
+}
