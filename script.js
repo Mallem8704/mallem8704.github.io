@@ -82,3 +82,15 @@ document.querySelectorAll('.cyber-btn').forEach(btn => {
   });
 });
 
+// simple fade-in on load
+document.querySelectorAll(".section").forEach((sec, i) => {
+  sec.style.opacity = 0;
+  sec.style.transform = "translateY(30px)";
+  setTimeout(() => {
+    sec.style.transition = "0.8s";
+    sec.style.opacity = 1;
+    sec.style.transform = "translateY(0)";
+  }, i * 200);
+});
+
+
