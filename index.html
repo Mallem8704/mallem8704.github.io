@@ -5,23 +5,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Mallem Dheeraj Royal | AI & Tech Freelancer</title>
 
-  <!-- Styles -->
   <link rel="stylesheet" href="style.css"/>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
-
 <body>
 
-<!-- ================= HERO SECTION ================= -->
+<!-- ================= HERO ================= -->
 <section id="hero" class="hero-section">
   <div class="container">
+
     <div class="hero-header">
-      <!-- Profile Image -->
-      <img 
-        src="WhatsApp Image 2025-12-28 at 8.37.10 PM.jpeg"
-        alt="Mallem Dheeraj Royal"
-        class="profile-photo"
-      />
+      <img src="WhatsApp Image 2025-12-28 at 8.37.10 PM.jpeg"
+           alt="Mallem Dheeraj Royal"
+           class="profile-photo">
 
       <div class="hero-text">
         <h1 class="hero-name">Mallem Dheeraj Royal</h1>
@@ -31,23 +27,23 @@
 
     <p class="hero-intro">
       I help businesses and professionals leverage AI, automation, and technology
-      to solve real-world problems and drive measurable growth. From intelligent
-      automation to full-stack AI solutions, I build systems that save time and scale impact.
+      to solve real-world problems and drive measurable growth.
     </p>
 
     <div class="hero-cards">
-      <button class="hero-card" onclick="scrollToSection('portfolio')">
+      <button class="hero-card glass" onclick="scrollToSection('portfolio')">
         <div class="card-icon">🎓</div>
         <h3>Portfolio</h3>
         <p>Education, skills & projects</p>
       </button>
 
-      <button class="hero-card" onclick="scrollToSection('services')">
+      <button class="hero-card glass" onclick="scrollToSection('services')">
         <div class="card-icon">🚀</div>
         <h3>Services</h3>
-        <p>What I offer & results</p>
+        <p>What I offer & impact</p>
       </button>
     </div>
+
   </div>
 </section>
 
@@ -57,50 +53,51 @@
 
     <div class="section-header">
       <h2>Portfolio</h2>
-      <p>Strong foundation through education and hands‑on AI projects</p>
+      <p>Trust built through education and real projects</p>
     </div>
 
-    <!-- ===== EDUCATION ===== -->
+    <!-- ===== EDUCATION (ONE CARD) ===== -->
     <h3 class="subsection-title">Education</h3>
 
-    <div class="education-card">
-      <h4>Secondary School (10th Class)</h4>
-      <p><strong>School:</strong> Valmeeki High School, Kadiri</p>
-      <p><strong>Board:</strong> SSC – Andhra Pradesh State Board</p>
-      <p><strong>Year:</strong> 2020</p>
-    </div>
+    <div class="education-card glass">
+      <div class="education-block">
+        <h4>Secondary School (10th)</h4>
+        <p><strong>School:</strong> Valmeeki High School, Kadiri</p>
+        <p><strong>Board:</strong> SSC – Andhra Pradesh</p>
+        <p><strong>Year:</strong> 2020</p>
+      </div>
 
-    <div class="education-card">
-      <h4>Intermediate (11th & 12th)</h4>
-      <p><strong>College:</strong> Blue Moon International College, Kadiri</p>
-      <p><strong>Board:</strong> Board of Intermediate Education, Andhra Pradesh (BIEAP)</p>
-      <p><strong>Year:</strong> 2022</p>
-    </div>
+      <div class="education-divider"></div>
 
-    <div class="education-card">
-      <h4>Bachelor of Technology (B.Tech)</h4>
-      <p><strong>College:</strong> S. J. C. Institute of Technology (SJCIT), Chikkaballapur</p>
-      <p><strong>University:</strong> Visvesvaraya Technological University (VTU), Belagavi</p>
-      <p><strong>Branch:</strong> Artificial Intelligence & Machine Learning (AIML)</p>
-      <p><strong>Duration:</strong> 2022 – 2026</p>
-      <p><strong>Status:</strong> Currently 8th Semester (Final Year)</p>
+      <div class="education-block">
+        <h4>Intermediate (11th & 12th)</h4>
+        <p><strong>College:</strong> Blue Moon International College, Kadiri</p>
+        <p><strong>Board:</strong> BIEAP</p>
+        <p><strong>Year:</strong> 2022</p>
+      </div>
+
+      <div class="education-divider"></div>
+
+      <div class="education-block">
+        <h4>B.Tech – Artificial Intelligence & ML</h4>
+        <p><strong>College:</strong> SJC Institute of Technology, Chikkaballapur</p>
+        <p><strong>University:</strong> VTU, Belagavi</p>
+        <p><strong>Duration:</strong> 2022 – 2026</p>
+        <p><strong>Status:</strong> 8th Semester (Final Year)</p>
+      </div>
     </div>
 
     <!-- ===== SKILLS ===== -->
     <h3 class="subsection-title">Technical Skills</h3>
-
     <div class="skills-grid">
       <span class="skill-tag">Python</span>
       <span class="skill-tag">SQL</span>
       <span class="skill-tag">Machine Learning</span>
-      <span class="skill-tag">Deep Learning</span>
-      <span class="skill-tag">Generative AI</span>
       <span class="skill-tag">AI Automation</span>
       <span class="skill-tag">Data Analysis</span>
-      <span class="skill-tag">Excel & Google Sheets</span>
-      <span class="skill-tag">Dashboard Development</span>
       <span class="skill-tag">Web Development</span>
-      <span class="skill-tag">Content Strategy</span>
+      <span class="skill-tag">Dashboards</span>
+      <span class="skill-tag">Generative AI</span>
     </div>
 
     <!-- ===== PROJECTS ===== -->
@@ -108,36 +105,37 @@
 
     <div class="projects-grid">
 
-      <div class="project-card">
+      <div class="project-card glass">
         <h4>SolarGuard AI</h4>
-        <p>AI-powered rooftop solar panel inspection using Computer Vision and Generative AI.</p>
-        <p class="project-outcome">✔ Reduced manual inspection time by 70%</p>
+        <p>AI-powered solar panel inspection using Computer Vision.</p>
+        <p class="project-outcome">✔ 70% faster inspections</p>
       </div>
 
-      <div class="project-card">
+      <div class="project-card glass">
         <h4>Smart Nagar AI</h4>
-        <p>AI-driven public issue tracking and intelligent governance platform.</p>
-        <p class="project-outcome">✔ Faster and transparent civic issue resolution</p>
+        <p>AI-based public issue tracking and governance system.</p>
+        <p class="project-outcome">✔ Faster issue resolution</p>
       </div>
 
-      <div class="project-card">
+      <div class="project-card glass">
         <h4>AI Reverse Shopping</h4>
-        <p>AI matches buyer requirements with the best sellers automatically.</p>
-        <p class="project-outcome">✔ 85% improvement in matching accuracy</p>
+        <p>AI matches buyers with best sellers automatically.</p>
+        <p class="project-outcome">✔ 85% accuracy improvement</p>
       </div>
 
-      <div class="project-card">
+      <div class="project-card glass">
         <h4>AI Music Composer</h4>
         <p>
-          An AI-powered music generation system that learns melody, rhythm, and harmony
-          from existing music datasets to compose original tracks automatically.
+          Generative AI system that composes original music by learning
+          melody, rhythm, and harmony patterns.
         </p>
         <p class="project-outcome">
-          ✔ Successfully generated multiple AI-composed music tracks using Generative AI
+          ✔ AI-generated original music tracks
         </p>
       </div>
 
     </div>
+
   </div>
 </section>
 
@@ -147,36 +145,37 @@
 
     <div class="section-header">
       <h2>Services</h2>
-      <p>Turning skills into measurable business value</p>
+      <p>Portfolio builds trust — services generate income</p>
     </div>
 
     <div class="services-grid">
 
-      <div class="service-card">
+      <div class="service-card glass">
         <h3>AI & Automation</h3>
-        <p>Manual work → Intelligent automated systems</p>
-        <p class="service-value">Save 15+ hours per week</p>
+        <p>Manual work → Automated systems</p>
+        <p class="service-value">Save 15+ hrs/week</p>
       </div>
 
-      <div class="service-card">
+      <div class="service-card glass">
         <h3>Web & Tech Solutions</h3>
-        <p>Modern websites, dashboards & platforms</p>
-        <p class="service-value">3× better engagement</p>
+        <p>Modern websites & dashboards</p>
+        <p class="service-value">3× engagement</p>
       </div>
 
-      <div class="service-card">
+      <div class="service-card glass">
         <h3>Resume & LinkedIn Optimization</h3>
-        <p>ATS‑friendly resumes that convert</p>
-        <p class="service-value">3× interview callbacks</p>
+        <p>ATS-optimized profiles</p>
+        <p class="service-value">3× callbacks</p>
       </div>
 
-      <div class="service-card">
+      <div class="service-card glass">
         <h3>Content & Digital Strategy</h3>
-        <p>Brand building and online growth</p>
-        <p class="service-value">5× audience reach</p>
+        <p>Brand growth & reach</p>
+        <p class="service-value">5× audience growth</p>
       </div>
 
     </div>
+
   </div>
 </section>
 
@@ -184,7 +183,7 @@
 <section class="cta-section">
   <div class="container">
     <h2>Let’s Work Together</h2>
-    <p>Ready to grow using AI & technology? Let’s connect.</p>
+    <p>Ready to grow using AI & technology?</p>
 
     <div class="cta-buttons">
       <a href="mailto:mallemdheerajroyal@gmail.com" class="cta-button primary">
@@ -197,7 +196,6 @@
   </div>
 </section>
 
-<!-- ================= FOOTER ================= -->
 <footer class="footer">
   <p>© 2025 Mallem Dheeraj Royal</p>
   <p>Built with GitHub Pages</p>
