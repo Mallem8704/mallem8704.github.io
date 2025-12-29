@@ -18,43 +18,58 @@
 <section id="hero" class="hero-section">
   <div class="hero-center">
 
-    <!-- Profile Image -->
+    <!-- ================= PROFILE IMAGE ================= -->
     <img 
       src="WhatsApp Image 2025-12-28 at 8.37.10 PM.jpeg"
       alt="Mallem Dheeraj Royal"
       class="profile-photo big-profile"
+      data-animate
     >
 
-    <!-- Name & Title -->
-    <h1 class="hero-name big-text">Mallem Dheeraj Royal</h1>
-    <p class="hero-tagline big-tagline">AI & Tech Solutions Specialist</p>
+    <!-- ================= NAME & TITLE ================= -->
+    <h1 class="hero-name big-text" data-animate>
+      Mallem Dheeraj Royal
+    </h1>
 
-    <!-- ABOUT ME -->
-    <p class="hero-intro big-intro">
+    <p class="hero-tagline big-tagline" data-animate>
+      AI & Tech Solutions Specialist
+    </p>
+
+    <!-- ================= ABOUT ME ================= -->
+    <p class="hero-intro big-intro" data-animate>
       I’m a passionate AI & technology enthusiast who builds smart,
       automation‑driven solutions to help businesses and individuals
       save time, improve efficiency, and grow faster in the digital era.
     </p>
 
-    <!-- ================= EXPLORE WHAT I DO (HIGHLIGHT) ================= -->
-    <div class="explore-highlight glass cyber-glow">
+    <!-- ================= EXPLORE WHAT I DO ================= -->
+    <div class="explore-highlight glass cyber-glow"
+         data-animate
+         onclick="scrollToSection('contact')"
+         role="button"
+         aria-label="Explore what I do">
+
       <span class="explore-emoji">👀</span>
+
       <span class="explore-text">
         <strong>Explore What I Do</strong>
       </span>
+
       <p class="explore-subtext">
         AI solutions • Automation • Web systems • Smart digital products
       </p>
     </div>
 
     <!-- ================= NAVIGATION BUTTONS ================= -->
-    <div class="hero-cards big-cards">
+    <div class="hero-cards big-cards" data-animate>
       <a href="portfolio.html" class="hero-card glass cyber-btn">
         🎓 Portfolio
       </a>
+
       <a href="services.html" class="hero-card glass cyber-btn">
         🚀 Services
       </a>
+
       <a href="blogs.html" class="hero-card glass cyber-btn">
         ✍️ Blogs
       </a>
@@ -62,6 +77,7 @@
 
   </div>
 </section>
+
   <!-- ================= CONTACT CTA ================= -->
 <section id="contact" class="section contact-preview">
   <div class="container contact-center">
