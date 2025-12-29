@@ -1280,6 +1280,53 @@ body {
   font-size: 1.2rem;
 }
 
+/* ================= CONTACT PREVIEW (INDEX) ================= */
+
+.contact-preview {
+  margin-top: 80px;
+}
+
+.contact-title {
+  font-size: 2.2rem;
+  margin-bottom: 10px;
+}
+
+.contact-title .highlight {
+  color: #00f0ff;
+}
+
+.contact-subtitle {
+  max-width: 600px;
+  margin: 0 auto 40px;
+  opacity: 0.85;
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 24px;
+}
+
+.contact-card {
+  padding: 26px 20px;
+  border-radius: 16px;
+  text-align: center;
+  transition: all 0.35s ease;
+}
+
+.contact-card h3 {
+  margin: 10px 0 6px;
+}
+
+.contact-card p {
+  font-size: 0.9rem;
+  opacity: 0.85;
+}
+
+.contact-card:hover {
+  transform: translateY(-8px) scale(1.03);
+  box-shadow: 0 0 30px rgba(0,240,255,0.45);
+}
 
 
 
