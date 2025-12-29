@@ -1212,6 +1212,73 @@ body {
   100% { box-shadow: 0 0 10px rgba(0,240,255,0.3); }
 }
 
+/* ================= CONTACT PAGE ================= */
+
+.contact-center {
+  text-align: center;
+}
+
+.contact-title {
+  font-size: 2.4rem;
+  margin-bottom: 10px;
+}
+
+.contact-title .highlight {
+  color: #00f0ff;
+}
+
+.contact-subtitle {
+  max-width: 650px;
+  margin: 0 auto 40px;
+  opacity: 0.85;
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 24px;
+}
+
+.contact-card {
+  padding: 30px 20px;
+  border-radius: 16px;
+  text-align: center;
+  transition: all 0.35s ease;
+}
+
+.contact-card i {
+  font-size: 2rem;
+  margin-bottom: 12px;
+  color: #00f0ff;
+}
+
+.contact-card h3 {
+  margin-bottom: 6px;
+}
+
+.contact-card p {
+  font-size: 0.9rem;
+  opacity: 0.85;
+}
+
+.contact-card:hover {
+  transform: translateY(-8px) scale(1.03);
+  box-shadow: 0 0 30px rgba(0,240,255,0.4);
+}
+
+/* Top home button */
+.top-nav {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  z-index: 100;
+}
+
+.home-btn {
+  padding: 12px 14px;
+  border-radius: 50%;
+  font-size: 1.2rem;
+}
 
 
 
