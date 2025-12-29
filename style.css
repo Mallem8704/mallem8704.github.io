@@ -74,61 +74,51 @@ h1, h2, h3, h4 {
 }
 
 /* ================= HERO ================= */
+/* ================= HERO CENTER ALIGN FIX ================= */
 .hero-section {
   min-height: 100vh;
   display: flex;
   align-items: center;
+  justify-content: center;
+  text-align: center;
 }
 
 .hero-header {
   display: flex;
+  flex-direction: column;   /* image on top */
   align-items: center;
-  gap: 20px;
-  margin-bottom: 30px;
+  gap: 14px;
+  margin-bottom: 24px;
 }
 
 .profile-photo {
-  width: 85px;
-  height: 85px;
+  width: 110px;
+  height: 110px;
   border-radius: 50%;
   border: 3px solid var(--primary);
   object-fit: cover;
 }
 
-.hero-name {
-  font-size: 2.4rem;
+.hero-section h1 {
+  font-size: 2.6rem;
 }
 
-.hero-tagline {
+.tagline {
   color: var(--primary);
   font-weight: 600;
 }
 
 .hero-intro {
-  max-width: 720px;
+  max-width: 650px;
+  margin: 0 auto 35px;
   color: var(--text-muted);
-  margin-bottom: 40px;
 }
 
 .hero-cards {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
-  gap: 24px;
-}
-
-.hero-card {
-  padding: 26px;
-  text-align: center;
-  cursor: pointer;
-}
-
-.hero-card h3 {
-  margin-top: 10px;
-}
-
-.hero-card p {
-  color: var(--text-muted);
-  font-size: 0.95rem;
+  display: flex;
+  justify-content: center;
+  gap: 22px;
+  flex-wrap: wrap;
 }
 
 /* ================= EDUCATION ================= */
