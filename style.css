@@ -468,3 +468,39 @@ section, .glass {
   }
 }
 
+/* ================= EDUCATION HOVER ANIMATION ================= */
+
+/* Main education card hover */
+.education-card {
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
+}
+
+.education-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 35px 70px rgba(0, 0, 0, 0.6);
+}
+
+/* Inner sections hover (10th, Inter, B.Tech) */
+.education-card .edu-top > div,
+.education-card .edu-bottom {
+  transition: transform 0.3s ease, background 0.3s ease;
+  border-radius: 14px;
+}
+
+.education-card .edu-top > div:hover,
+.education-card .edu-bottom:hover {
+  transform: scale(1.03);
+  background: rgba(255, 255, 255, 0.08);
+}
+
+/* Title highlight */
+.education-card h4 {
+  transition: color 0.3s ease;
+}
+
+.education-card .edu-top > div:hover h4,
+.education-card .edu-bottom:hover h4 {
+  color: var(--primary);
+}
+
+
