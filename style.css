@@ -78,18 +78,24 @@ h1, h2, h3, h4 {
 .hero-section {
   min-height: 100vh;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  align-items: center;      /* vertical center */
+  justify-content: center;  /* horizontal center */
   text-align: center;
 }
 
-.hero-header {
+
+ .hero-header {
   display: flex;
-  flex-direction: column;   /* image on top */
   align-items: center;
-  gap: 14px;
-  margin-bottom: 24px;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 30px;
 }
+
+.hero-cards {
+  justify-items: center;
+}
+
 
 .profile-photo {
   width: 110px;
