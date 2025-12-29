@@ -4,45 +4,18 @@ function scrollToSection(id) {
   });
 }
 
-/* ================= SCROLL REVEAL ================= */
-const revealElements = document.querySelectorAll(
-  ".glass, .project-card, .service-card, .blog-card"
-);
+/* ================= SCROLL REVEAL LOGIC ================= */
+const reveals = document.querySelectorAll(".reveal");
 
-const revealObserver = new IntersectionObserver(
-  (entries) => {
-    entries.forEach((entry) => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add("reveal");
-      }
-    });
-  },
-  {
-    threshold: 0.15,
-  }
-);
-
-revealElements.forEach((el) => revealObserver.observe(el));
-
-function scrollToSection(id) {
-  document.getElementById(id).scrollIntoView({
-    behavior: "smooth"
+const revealOnScroll = () => {
+  const windowHeight = window.innerHeight;
+  reveals.forEach(el => {
+    const top = el.getBoundingClientRect().top;
+    if (top < windowHeight - 80) {
+      el.classList.add("active");
+    }
   });
-}
+};
 
-/* ===== Scroll Reveal for Services ===== */
-const serviceCards = document.querySelectorAll(".service-card");
-
-const serviceObserver = new IntersectionObserver(
-  entries => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add("show");
-      }
-    });
-  },
-  { threshold: 0.2 }
-);
-
-serviceCards.forEach(card => serviceObserver.observe(card));
-
+window.addEventListener("scroll", revealOnScroll);
+window.addEventListener("load", revealOnScroll);
