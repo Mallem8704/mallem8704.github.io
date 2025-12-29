@@ -972,6 +972,34 @@ body::before {
   transform: translateY(0);
 }
 
+/* ===== HERO BUTTON FIX ===== */
+
+.big-cards {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  gap: 26px;
+  flex-wrap: wrap;
+}
+
+.cyber-btn {
+  min-width: 180px;
+  padding: 20px 26px;
+  font-size: 1.05rem;
+  font-weight: 600;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.35s ease;
+}
+
+/* Cyber hover effect */
+.cyber-btn:hover {
+  transform: translateY(-8px) scale(1.05);
+  box-shadow:
+    0 0 0 1px rgba(56,189,248,0.6),
+    0 0 30px rgba(56,189,248,0.5);
+}
+
 
 
 
