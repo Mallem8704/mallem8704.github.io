@@ -912,6 +912,55 @@ body {
   50% { background-position: 100% 50%; }
   100% { background-position: 0% 50%; }
 }
+:root {
+  --bg-main: #05080f;
+  --bg-secondary: #0b1224;
+  --primary: #38bdf8;   /* neon blue */
+  --accent: #22d3ee;    /* cyan */
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background:
+    radial-gradient(circle at 20% 20%, rgba(56,189,248,0.15), transparent 40%),
+    radial-gradient(circle at 80% 80%, rgba(34,211,238,0.12), transparent 40%);
+  animation: bgMove 12s linear infinite;
+  z-index: -1;
+}
+
+@keyframes bgMove {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-40px); }
+  100% { transform: translateY(0); }
+}
+
+.hero-section {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.hero-header h1 {
+  font-size: 3.2rem;
+  letter-spacing: 1px;
+}
+
+.hero-intro {
+  font-size: 1.15rem;
+}
+
+.hero-cards {
+  margin-top: 50px;
+}
+
+.glass:hover {
+  box-shadow:
+    0 0 0 1px rgba(56,189,248,0.4),
+    0 0 25px rgba(56,189,248,0.35);
+}
+
 
 
 
